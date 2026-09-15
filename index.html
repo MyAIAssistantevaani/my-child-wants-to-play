@@ -1,3439 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>My Child Just Wants to Play All the Time | Turn Play Into Learning</title>
+<meta name="description" content="A calm, practical guide for parents who want to turn a child's love of play into meaningful learning without constant study battles.">
+<meta name="robots" content="index,follow">
 
-<meta
-name="description"
-content="Turn play into learning without battles. Discover a calm, practical approach to making everyday learning more engaging for your child."
->
-
-<meta name="robots" content="index, follow">
-
-<!-- =========================
-     SOCIAL SHARING
-========================= -->
-
-<meta property="og:title"
-content="My Child Just Wants to Play All the Time">
-
-<meta property="og:description"
-content="What if your child's love of play could become part of the learning journey?">
-
-<meta property="og:type" content="website">
-
-
-<!-- =========================
-     META PIXEL
-     ID: 2032621154052189
-========================= -->
-
+<!-- Meta Pixel -->
 <script>
-
-!function(f,b,e,v,n,t,s)
-{
-if(f.fbq)return;
-
-n=f.fbq=function()
-{
-n.callMethod ?
-n.callMethod.apply(n,arguments) :
-n.queue.push(arguments)
-};
-
-if(!f._fbq)f._fbq=n;
-
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-
-s=b.getElementsByTagName(e)[0];
-
-s.parentNode.insertBefore(t,s)
-
-}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','2032621154052189');
-
 fbq('track','PageView');
-
 fbq('track','ViewContent');
-
 </script>
-
-
-<noscript>
-
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=2032621154052189&ev=PageView&noscript=1"
-alt=""
->
-
-</noscript>
-
-
-<!-- =========================
-     FONTS
-========================= -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2032621154052189&ev=PageView&noscript=1" alt=""></noscript>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link
-href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap"
-rel="stylesheet"
->
-
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
 :root{
-
---navy:#132a55;
-
---blue:#1769d2;
-
---sky:#eaf5ff;
-
---yellow:#ffd447;
-
---orange:#ff8b22;
-
---red:#f4435c;
-
---pink:#ff4f86;
-
---green:#37b878;
-
---purple:#7656e8;
-
---cream:#fffaf3;
-
---white:#ffffff;
-
---text:#24324a;
-
---muted:#667085;
-
---border:#e8edf4;
-
---shadow:
-0 20px 60px rgba(20,45,90,.12);
-
---shadow-big:
-0 30px 80px rgba(20,45,90,.20);
-
---radius:28px;
-
+  --navy:#142d5c; --blue:#1769d2; --sky:#eaf4ff;
+  --pink:#ff4774; --orange:#ff6b3d; --yellow:#ffd84d;
+  --green:#31b77a; --purple:#7657e8; --cream:#fffaf3;
+  --text:#263957; --muted:#687891; --white:#fff;
+  --shadow:0 18px 55px rgba(20,45,92,.13);
+  --shadow-lg:0 28px 80px rgba(20,45,92,.22);
 }
-
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-
-font-family:
-"Nunito",
-Arial,
-sans-serif;
-
-color:var(--text);
-
-background:var(--cream);
-
-line-height:1.6;
-
-overflow-x:hidden;
-
+  font-family:"Nunito",Arial,sans-serif;color:var(--text);
+  background:var(--cream);line-height:1.65;overflow-x:hidden;
 }
-
-h1,h2,h3,h4{
-
-font-family:
-"Baloo 2",
-cursive;
-
-color:var(--navy);
-
-}
-
-a{
-text-decoration:none;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-.container{
-
-width:min(1160px,calc(100% - 36px));
-
-margin:auto;
-
-}
-
-
-/* =========================================================
-   TOP ANNOUNCEMENT
-========================================================= */
-
+h1,h2,h3,.logo{font-family:"Baloo 2",cursive}
+a{text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:min(1160px,calc(100% - 36px));margin:auto}
 .top-strip{
-
-background:var(--navy);
-
-color:white;
-
-text-align:center;
-
-font-weight:800;
-
-font-size:14px;
-
-padding:10px 15px;
-
+  background:var(--navy);color:#fff;text-align:center;padding:10px 15px;
+  font-size:14px;font-weight:900;letter-spacing:.1px;
 }
-
-.top-strip span{
-
-color:var(--yellow);
-
-}
-
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-
+.top-strip span{color:var(--yellow)}
 .nav{
-
-background:
-rgba(255,250,243,.92);
-
-backdrop-filter:blur(14px);
-
-border-bottom:1px solid rgba(0,0,0,.05);
-
-position:sticky;
-
-top:0;
-
-z-index:100;
-
+  position:sticky;top:0;z-index:1000;background:rgba(255,250,243,.94);
+  backdrop-filter:blur(15px);border-bottom:1px solid rgba(20,45,92,.07)
 }
-
-.nav-inner{
-
-min-height:72px;
-
-display:flex;
-
-align-items:center;
-
-justify-content:space-between;
-
-gap:20px;
-
+.nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:28px;font-weight:900;color:var(--navy)}
+.logo span{color:var(--pink)}
+.nav-btn,.cta{
+  color:#fff;font-weight:900;border-radius:999px;display:inline-flex;align-items:center;
+  justify-content:center;gap:9px;transition:.25s;cursor:pointer
 }
-
-.logo{
-
-font-family:"Baloo 2",cursive;
-
-font-size:25px;
-
-font-weight:800;
-
-color:var(--navy);
-
+.nav-btn{
+  background:var(--blue);padding:13px 25px;box-shadow:0 10px 25px rgba(23,105,210,.22)
 }
-
-.logo span{
-
-color:var(--pink);
-
-}
-
-.nav-button{
-
-background:var(--blue);
-
-color:white;
-
-font-weight:900;
-
-padding:11px 22px;
-
-border-radius:999px;
-
-box-shadow:
-0 8px 20px rgba(23,105,210,.20);
-
-transition:.25s;
-
-}
-
-.nav-button:hover{
-
-transform:translateY(-3px);
-
-box-shadow:
-0 14px 30px rgba(23,105,210,.30);
-
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
+.nav-btn:hover{transform:translateY(-3px)}
 .hero{
-
-position:relative;
-
-padding:55px 0 80px;
-
-background:
-
-radial-gradient(
-circle at 10% 10%,
-rgba(255,212,71,.22),
-transparent 25%
-),
-
-radial-gradient(
-circle at 90% 20%,
-rgba(118,86,232,.13),
-transparent 25%
-),
-
-var(--cream);
-
-overflow:hidden;
-
+  position:relative;padding:68px 0 88px;overflow:hidden;
+  background:
+    radial-gradient(circle at 5% 15%,rgba(255,216,77,.27),transparent 27%),
+    radial-gradient(circle at 96% 20%,rgba(118,87,232,.15),transparent 28%),
+    radial-gradient(circle at 80% 90%,rgba(255,71,116,.10),transparent 30%),var(--cream)
 }
-
-.hero-grid{
-
-display:grid;
-
-grid-template-columns:
-.92fr
-1.08fr;
-
-gap:55px;
-
-align-items:center;
-
-}
-
-
-/* LEFT SIDE */
-
-.hero-copy{
-
-animation:
-heroIn .8s ease both;
-
-}
-
-@keyframes heroIn{
-
-from{
-opacity:0;
-transform:translateY(30px);
-}
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
-}
-
+.hero-grid{display:grid;grid-template-columns:.91fr 1.09fr;gap:52px;align-items:center}
+.hero-copy{animation:fadeUp .8s ease both}
 .badge{
-
-display:inline-flex;
-
-align-items:center;
-
-gap:8px;
-
-background:#fff2c6;
-
-color:#5c4910;
-
-padding:9px 17px;
-
-border-radius:999px;
-
-font-weight:900;
-
-font-size:13px;
-
-margin-bottom:18px;
-
+  display:inline-flex;align-items:center;background:#fff0bd;color:#604b0b;
+  padding:10px 17px;border-radius:999px;font-size:13px;font-weight:900;margin-bottom:20px
 }
-
-.hero h1{
-
-font-size:
-clamp(48px,6vw,76px);
-
-line-height:.94;
-
-letter-spacing:-1px;
-
-margin-bottom:22px;
-
+.hero h1{font-size:clamp(49px,6vw,77px);line-height:.94;letter-spacing:-1px;color:var(--navy)}
+.hero h1 .pink{color:var(--pink);position:relative;display:inline-block}
+.hero h1 .pink:after{
+  content:"";position:absolute;left:2px;right:2px;height:7px;bottom:2px;
+  background:var(--yellow);border-radius:20px;z-index:-1
 }
-
-.hero h1 .play{
-
-color:var(--red);
-
-position:relative;
-
+.hero-lead{font-size:19px;color:var(--muted);margin:23px 0 12px}
+.hero-lead strong{color:var(--navy)}
+.emotional-line{font:800 23px/1.3 "Baloo 2",cursive;color:var(--pink);margin:14px 0 25px}
+.cta{
+  position:relative;overflow:hidden;padding:17px 28px;font-size:18px;
+  background:linear-gradient(135deg,#ff3d68,#ff703c);
+  box-shadow:0 17px 38px rgba(244,67,92,.28)
 }
-
-.hero h1 .play:after{
-
-content:"";
-
-position:absolute;
-
-height:8px;
-
-background:var(--yellow);
-
-left:2px;
-
-right:2px;
-
-bottom:-2px;
-
-border-radius:20px;
-
-z-index:-1;
-
+.cta:hover{transform:translateY(-4px) scale(1.015);box-shadow:0 22px 45px rgba(244,67,92,.35)}
+.cta:after{
+  content:"";position:absolute;top:0;left:-100px;width:55px;height:100%;
+  background:rgba(255,255,255,.3);transform:skewX(-20deg);animation:shine 4s infinite
 }
-
-.hero-lead{
-
-font-size:19px;
-
-color:var(--muted);
-
-margin-bottom:16px;
-
-max-width:620px;
-
+@keyframes shine{0%,60%{left:-100px}100%{left:125%}}
+.cta-note{font-size:12px;color:var(--muted);font-weight:800;margin-top:9px}
+.hero-visual{position:relative;animation:visualIn 1s .12s ease both}
+.hero-image-frame{
+  position:relative;border-radius:30px;padding:8px;
+  background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(255,255,255,.45));
+  box-shadow:var(--shadow-lg)
 }
-
-.hero-lead strong{
-
-color:var(--navy);
-
+.hero-image{
+  width:100%;border-radius:23px;box-shadow:0 18px 45px rgba(20,45,92,.12);
+  transition:.5s
 }
-
-
-/* EMOTIONAL COPY */
-
-.emotional-line{
-
-font-family:"Baloo 2",cursive;
-
-font-size:24px;
-
-font-weight:700;
-
-color:var(--pink);
-
-margin-bottom:25px;
-
+.hero-image:hover{transform:translateY(-7px) scale(1.01)}
+.float{
+  position:absolute;z-index:5;background:#fff;border-radius:17px;padding:12px 16px;
+  font-size:13px;font-weight:900;box-shadow:var(--shadow);animation:float 4s ease-in-out infinite
 }
+.float.a{left:-22px;top:10%;color:var(--green)}
+.float.b{right:-18px;bottom:11%;color:var(--purple);animation-delay:1s}
+@keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-11px) rotate(1deg)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes visualIn{from{opacity:0;transform:translateX(35px) scale(.96)}to{opacity:1;transform:none}}
 
+.trust{background:#fff;border-top:1px solid #e8edf4;border-bottom:1px solid #e8edf4;padding:23px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust-item{display:flex;align-items:center;justify-content:center;gap:9px;font-size:14px;font-weight:900;color:var(--navy)}
+.trust-item b{font-size:24px}
 
-/* CTA */
+.section{padding:95px 0}
+.section-header{max-width:790px;text-align:center;margin:0 auto 52px}
+.kicker{font-size:13px;font-weight:900;letter-spacing:2px;color:var(--blue);text-transform:uppercase;margin-bottom:9px}
+.section-header h2{font-size:clamp(40px,5vw,59px);line-height:1;margin-bottom:16px;color:var(--navy)}
+.section-header p{font-size:18px;color:var(--muted)}
 
-.cta-row{
-
-display:flex;
-
-align-items:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
+.problem{background:#fff}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{
+  background:#fff;border:1px solid #e8edf4;border-radius:27px;padding:32px 27px;
+  transition:.3s
 }
-
-.primary-cta{
-
-position:relative;
-
-display:inline-flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:10px;
-
-background:
-
-linear-gradient(
-135deg,
-#ff3f67,
-#ff6b3d
-);
-
-color:white;
-
-font-size:19px;
-
-font-weight:900;
-
-padding:17px 30px;
-
-border-radius:16px;
-
-box-shadow:
-0 15px 30px rgba(244,67,92,.28);
-
-transition:
-transform .25s,
-box-shadow .25s;
-
-overflow:hidden;
-
-}
-
-.primary-cta:before{
-
-content:"";
-
-position:absolute;
-
-width:70px;
-
-height:150%;
-
-background:
-rgba(255,255,255,.28);
-
-transform:
-rotate(20deg);
-
-left:-100px;
-
-top:-25px;
-
-animation:
-shine 3.5s infinite;
-
-}
-
-@keyframes shine{
-
-0%,60%{
-left:-120px;
-}
-
-100%{
-left:130%;
-}
-
-}
-
-.primary-cta:hover{
-
-transform:
-translateY(-4px)
-scale(1.02);
-
-box-shadow:
-0 22px 45px rgba(244,67,92,.35);
-
-}
-
-.cta-note{
-
-font-size:12px;
-
-font-weight:800;
-
-color:var(--muted);
-
-margin-top:10px;
-
-}
-
-
-/* =========================================================
-   HERO PRODUCT IMAGE
-========================================================= */
-
-.hero-visual{
-
-position:relative;
-
-animation:
-visualIn 1s .15s ease both;
-
-}
-
-@keyframes visualIn{
-
-from{
-
-opacity:0;
-
-transform:
-translateX(40px)
-scale(.95);
-
-}
-
-to{
-
-opacity:1;
-
-transform:
-translateX(0)
-scale(1);
-
-}
-
-}
-
-.hero-product{
-
-width:100%;
-
-border-radius:26px;
-
-box-shadow:
-var(--shadow-big);
-
-transition:
-transform .5s ease;
-
-}
-
-.hero-product:hover{
-
-transform:
-translateY(-8px)
-rotate(.3deg);
-
-}
-
-
-/* FLOATING BADGES */
-
-.float-badge{
-
-position:absolute;
-
-background:white;
-
-padding:13px 17px;
-
-border-radius:16px;
-
-box-shadow:var(--shadow);
-
-font-weight:900;
-
-font-size:13px;
-
-z-index:3;
-
-animation:
-float 4s ease-in-out infinite;
-
-}
-
-.float-one{
-
-top:8%;
-
-left:-25px;
-
-color:var(--green);
-
-}
-
-.float-two{
-
-bottom:12%;
-
-right:-22px;
-
-color:var(--purple);
-
-animation-delay:1s;
-
-}
-
-@keyframes float{
-
-0%,100%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-12px);
-}
-
-}
-
-
-/* =========================================================
-   TRUST BAR
-========================================================= */
-
-.trust{
-
-background:white;
-
-border-top:1px solid var(--border);
-
-border-bottom:1px solid var(--border);
-
-padding:24px 0;
-
-}
-
-.trust-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(4,1fr);
-
-gap:20px;
-
-}
-
-.trust-item{
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-gap:10px;
-
-font-weight:900;
-
-font-size:14px;
-
-color:var(--navy);
-
-text-align:center;
-
-}
-
-.trust-icon{
-
-font-size:25px;
-
-}
-
-
-/* =========================================================
-   SECTION COMMON
-========================================================= */
-
-.section{
-
-padding:95px 0;
-
-}
-
-.section-header{
-
-max-width:760px;
-
-margin:
-0 auto 55px;
-
-text-align:center;
-
-}
-
-.section-kicker{
-
-text-transform:uppercase;
-
-letter-spacing:2px;
-
-font-size:13px;
-
-font-weight:900;
-
-color:var(--blue);
-
-margin-bottom:10px;
-
-}
-
-.section-header h2{
-
-font-size:
-clamp(40px,5vw,58px);
-
-line-height:1;
-
-margin-bottom:17px;
-
-}
-
-.section-header p{
-
-font-size:18px;
-
-color:var(--muted);
-
-}
-
-
-/* =========================================================
-   PROBLEM SECTION
-========================================================= */
-
-.problem{
-
-background:white;
-
-}
-
-.problem-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(3,1fr);
-
-gap:24px;
-
-}
-
-.problem-card{
-
-padding:34px 28px;
-
-border:
-
-1px solid var(--border);
-
-border-radius:var(--radius);
-
-background:#fff;
-
-transition:.3s;
-
-}
-
-.problem-card:hover{
-
-transform:
-translateY(-7px);
-
-box-shadow:var(--shadow);
-
-}
-
-.problem-icon{
-
-font-size:45px;
-
-margin-bottom:15px;
-
-}
-
-.problem-card h3{
-
-font-size:27px;
-
-margin-bottom:8px;
-
-}
-
-.problem-card p{
-
-color:var(--muted);
-
-}
-
-
-/* =========================================================
-   EMOTIONAL SECTION
-========================================================= */
+.card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+.card-icon{font-size:43px;margin-bottom:10px}
+.card h3{font-size:27px;color:var(--navy);margin-bottom:6px}
+.card p{color:var(--muted)}
 
 .emotional{
-
-background:
-
-linear-gradient(
-135deg,
-#eef7ff,
-#fff1f6
-);
-
+  background:linear-gradient(135deg,#edf7ff,#fff0f6)
 }
-
-.emotional-grid{
-
-display:grid;
-
-grid-template-columns:
-1fr
-1fr;
-
-gap:60px;
-
-align-items:center;
-
+.emotional-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.image-wrap{position:relative}
+.section-image{
+  width:100%;border-radius:30px;box-shadow:var(--shadow-lg);transition:.5s
 }
-
-.emotional-image{
-
-border-radius:30px;
-
-box-shadow:var(--shadow-big);
-
+.section-image:hover{transform:translateY(-7px)}
+.image-chip{
+  position:absolute;left:20px;bottom:20px;background:#fff;padding:12px 16px;border-radius:15px;
+  font-weight:900;box-shadow:var(--shadow);color:var(--green)
 }
-
-.emotional-copy h2{
-
-font-size:
-clamp(40px,5vw,58px);
-
-line-height:1;
-
-margin-bottom:20px;
-
-}
-
-.emotional-copy h2 span{
-
-color:var(--pink);
-
-}
-
-.emotional-copy p{
-
-font-size:18px;
-
-color:var(--muted);
-
-margin-bottom:20px;
-
-}
-
+.emotional-copy h2{font-size:clamp(42px,5vw,60px);line-height:.98;margin-bottom:20px}
+.emotional-copy h2 span{color:var(--pink)}
+.emotional-copy p{font-size:18px;color:var(--muted);margin-bottom:18px}
 .quote{
-
-background:white;
-
-padding:22px 25px;
-
-border-left:
-6px solid var(--yellow);
-
-border-radius:0 18px 18px 0;
-
-box-shadow:var(--shadow);
-
-font-family:"Baloo 2",cursive;
-
-font-size:22px;
-
-font-weight:700;
-
-color:var(--navy);
-
+  background:#fff;border-left:6px solid var(--yellow);padding:21px 24px;
+  border-radius:0 18px 18px 0;box-shadow:var(--shadow);
+  font:800 22px/1.35 "Baloo 2",cursive;color:var(--navy)
 }
 
-
-/* =========================================================
-   BENEFITS
-========================================================= */
-
-.benefit-grid{
-
-display:grid;
-
-grid-template-columns:
-repeat(2,1fr);
-
-gap:20px;
-
-}
-
+.benefit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:19px}
 .benefit{
-
-display:flex;
-
-gap:18px;
-
-padding:25px;
-
-background:white;
-
-border:1px solid var(--border);
-
-border-radius:22px;
-
-transition:.3s;
-
+  display:flex;gap:17px;background:#fff;border:1px solid #e8edf4;border-radius:22px;
+  padding:24px;transition:.3s
 }
-
-.benefit:hover{
-
-transform:
-translateY(-5px);
-
-box-shadow:var(--shadow);
-
-}
-
+.benefit:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
 .benefit-icon{
-
-width:55px;
-
-height:55px;
-
-min-width:55px;
-
-display:grid;
-
-place-items:center;
-
-background:#edf5ff;
-
-border-radius:16px;
-
-font-size:27px;
-
+  width:55px;height:55px;min-width:55px;border-radius:16px;background:#edf5ff;
+  display:grid;place-items:center;font-size:26px
 }
+.benefit h3{font-size:24px;color:var(--navy);margin-bottom:3px}
+.benefit p{color:var(--muted)}
 
-.benefit h3{
-
-font-size:24px;
-
-margin-bottom:5px;
-
-}
-
-.benefit p{
-
-color:var(--muted);
-
-}
-
-
-/* =========================================================
-   BOOK SECTION
-========================================================= */
-
-.book-section{
-
-background:var(--navy);
-
-color:white;
-
-overflow:hidden;
-
-}
-
-.book-section h2{
-
-color:white;
-
-}
-
-.book-section .section-kicker{
-
-color:var(--yellow);
-
-}
-
-.book-section .section-header p{
-
-color:rgba(255,255,255,.7);
-
-}
-
-.book-grid{
-
-display:grid;
-
-grid-template-columns:
-.85fr
-1.15fr;
-
-gap:70px;
-
-align-items:center;
-
-}
-
-.cover-wrap{
-
-position:relative;
-
-max-width:450px;
-
-margin:auto;
-
-}
-
+.book-section{background:var(--navy);color:#fff}
+.book-section h2{color:#fff}.book-section .kicker{color:var(--yellow)}
+.book-section .section-header p{color:rgba(255,255,255,.68)}
+.book-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:70px;align-items:center}
+.cover-wrap{max-width:420px;margin:auto;position:relative}
 .cover{
-
-border-radius:8px;
-
-box-shadow:
--20px 25px 0 rgba(0,0,0,.15),
-0 35px 60px rgba(0,0,0,.35);
-
-transition:.5s;
-
+  width:100%;border-radius:8px;box-shadow:-18px 25px 0 rgba(0,0,0,.15),0 35px 65px rgba(0,0,0,.38);
+  transition:.5s
 }
-
-.cover:hover{
-
-transform:
-rotate(-2deg)
-translateY(-8px);
-
-}
-
+.cover:hover{transform:rotate(-2deg) translateY(-8px)}
 .cover-tag{
-
-position:absolute;
-
-right:-25px;
-
-top:30px;
-
-background:var(--yellow);
-
-color:var(--navy);
-
-padding:12px 17px;
-
-border-radius:12px;
-
-font-weight:900;
-
-box-shadow:var(--shadow);
-
-transform:rotate(4deg);
-
+  position:absolute;right:-18px;top:25px;background:var(--yellow);color:var(--navy);
+  padding:10px 16px;border-radius:12px;font-weight:900;transform:rotate(4deg);box-shadow:var(--shadow)
 }
-
-.book-points{
-
-display:grid;
-
-gap:20px;
-
-}
-
-.book-point{
-
-display:flex;
-
-gap:15px;
-
-align-items:flex-start;
-
-}
-
+.book-points{display:grid;gap:20px}
+.book-point{display:flex;gap:14px}
 .check{
-
-width:36px;
-
-height:36px;
-
-min-width:36px;
-
-display:grid;
-
-place-items:center;
-
-background:var(--green);
-
-border-radius:50%;
-
-font-weight:900;
-
+  width:36px;height:36px;min-width:36px;border-radius:50%;display:grid;place-items:center;
+  background:var(--green);color:#fff;font-weight:900
 }
+.book-point h3{font-size:24px;color:#fff;margin-bottom:2px}
+.book-point p{color:rgba(255,255,255,.68)}
 
-.book-point h3{
-
-color:white;
-
-font-size:24px;
-
-margin-bottom:3px;
-
-}
-
-.book-point p{
-
-color:rgba(255,255,255,.68);
-
-}
-
-
-/* =========================================================
-   TRANSFORMATION
-========================================================= */
-
-.transformation{
-
-background:var(--cream);
-
-}
-
-.transform-grid{
-
-display:grid;
-
-grid-template-columns:
-1fr
-1fr;
-
-gap:24px;
-
-}
-
-.transform-card{
-
-padding:35px;
-
-border-radius:28px;
-
-background:white;
-
-box-shadow:var(--shadow);
-
-}
-
-.transform-card h3{
-
-font-size:32px;
-
-margin-bottom:18px;
-
-}
-
-.transform-card ul{
-
-list-style:none;
-
-}
-
-.transform-card li{
-
-padding:12px 0;
-
-display:flex;
-
-gap:10px;
-
-border-bottom:1px solid var(--border);
-
-}
-
-.transform-card li:last-child{
-
-border-bottom:0;
-
-}
-
-.before h3{
-
-color:#7c8494;
-
-}
-
-.before li:before{
-
-content:"✕";
-
-color:#a4a9b2;
-
-font-weight:900;
-
-}
-
-.after{
-
-border-top:
-6px solid var(--green);
-
-}
-
-.after h3{
-
-color:var(--green);
-
-}
-
-.after li:before{
-
-content:"✓";
-
-color:var(--green);
-
-font-weight:900;
-
-}
-
-
-/* =========================================================
-   MOCKUP CTA SECTION
-========================================================= */
+.transformation{background:var(--cream)}
+.transform-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.transform-card{background:#fff;border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+.transform-card h3{font-size:31px;margin-bottom:13px;color:var(--navy)}
+.transform-card ul{list-style:none}
+.transform-card li{padding:11px 0;border-bottom:1px solid #e8edf4}
+.transform-card li:last-child{border:0}
+.before h3{color:#788398}
+.before li:before{content:"✕";color:#a0a7b2;font-weight:900;margin-right:10px}
+.after{border-top:6px solid var(--green)}
+.after h3{color:var(--green)}
+.after li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}
 
 .mockup-section{
-
-padding:100px 0;
-
-background:
-
-radial-gradient(
-circle at 15% 20%,
-rgba(255,212,71,.25),
-transparent 25%
-),
-
-radial-gradient(
-circle at 85% 80%,
-rgba(255,79,134,.16),
-transparent 30%
-),
-
-#f3f7fc;
-
+  padding:100px 0;
+  background:
+  radial-gradient(circle at 10% 20%,rgba(255,216,77,.23),transparent 25%),
+  radial-gradient(circle at 90% 80%,rgba(255,71,116,.15),transparent 30%),#f3f7fc
 }
-
-.mockup-grid{
-
-display:grid;
-
-grid-template-columns:
-1.1fr
-.9fr;
-
-gap:65px;
-
-align-items:center;
-
-}
-
+.mockup-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}
 .mockup{
-
-border-radius:22px;
-
-box-shadow:var(--shadow-big);
-
-transition:.5s;
-
+  width:100%;border-radius:25px;box-shadow:var(--shadow-lg);transition:.5s
 }
+.mockup:hover{transform:translateY(-9px) rotate(-1deg)}
+.mockup-copy h2{font-size:clamp(42px,5vw,61px);line-height:.98;margin-bottom:17px}
+.mockup-copy h2 span{color:var(--pink)}
+.mockup-copy p{font-size:18px;color:var(--muted);margin-bottom:20px}
+.small-list{display:grid;gap:9px;margin-bottom:26px}
+.small-list div{font-weight:800}
+.small-list span{color:var(--green);margin-right:7px}
 
-.mockup:hover{
-
-transform:
-translateY(-10px)
-rotate(-1deg);
-
-}
-
-.mockup-copy h2{
-
-font-size:
-clamp(40px,5vw,60px);
-
-line-height:.98;
-
-margin-bottom:18px;
-
-}
-
-.mockup-copy h2 span{
-
-color:var(--pink);
-
-}
-
-.mockup-copy p{
-
-font-size:18px;
-
-color:var(--muted);
-
-margin-bottom:24px;
-
-}
-
-.small-list{
-
-display:grid;
-
-gap:10px;
-
-margin-bottom:28px;
-
-}
-
-.small-list div{
-
-font-weight:800;
-
-}
-
-.small-list span{
-
-color:var(--green);
-
-margin-right:7px;
-
-}
-
-
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
-.final-cta{
-
-padding:105px 0;
-
-background:
-
-linear-gradient(
-135deg,
-#fff1f5,
-#fff8df
-);
-
-}
-
+.final-cta{padding:105px 0;background:linear-gradient(135deg,#fff0f5,#fff8df)}
 .final-box{
-
-max-width:900px;
-
-margin:auto;
-
-background:white;
-
-border-radius:35px;
-
-padding:65px 35px;
-
-text-align:center;
-
-box-shadow:var(--shadow-big);
-
-position:relative;
-
-overflow:hidden;
-
+  max-width:910px;margin:auto;padding:65px 35px;text-align:center;background:#fff;
+  border-radius:35px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden
 }
-
-.final-box:before{
-
-content:"";
-
-position:absolute;
-
-width:220px;
-
-height:220px;
-
-border-radius:50%;
-
-background:
-rgba(255,212,71,.18);
-
-top:-110px;
-
-left:-110px;
-
+.final-box:before,.final-box:after{
+  content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.45
 }
+.final-box:before{width:180px;height:180px;background:#ffd84d;left:-80px;top:-80px}
+.final-box:after{width:180px;height:180px;background:#ff8fb0;right:-80px;bottom:-80px}
+.final-box>*{position:relative;z-index:2}
+.final-emoji{font-size:46px;margin-bottom:4px}
+.final-box h2{font-size:clamp(42px,5vw,62px);line-height:.98;margin-bottom:17px}
+.final-box p{max-width:700px;margin:0 auto 26px;font-size:18px;color:var(--muted)}
 
-.final-box:after{
-
-content:"";
-
-position:absolute;
-
-width:220px;
-
-height:220px;
-
-border-radius:50%;
-
-background:
-rgba(255,79,134,.12);
-
-bottom:-110px;
-
-right:-110px;
-
-}
-
-.final-emoji{
-
-font-size:50px;
-
-margin-bottom:5px;
-
-}
-
-.final-box h2{
-
-font-size:
-clamp(42px,5vw,62px);
-
-line-height:.98;
-
-margin-bottom:18px;
-
-position:relative;
-
-z-index:2;
-
-}
-
-.final-box p{
-
-max-width:680px;
-
-margin:
-0 auto 28px;
-
-font-size:18px;
-
-color:var(--muted);
-
-position:relative;
-
-z-index:2;
-
-}
-
-.final-box .primary-cta{
-
-position:relative;
-
-z-index:3;
-
-}
-
-
-/* =========================================================
-   FAQ
-========================================================= */
-
-.faq{
-
-background:white;
-
-}
-
-.faq-list{
-
-max-width:800px;
-
-margin:auto;
-
-}
-
-details{
-
-border-bottom:
-1px solid var(--border);
-
-padding:20px 0;
-
-}
-
+.faq{background:#fff}
+.faq-list{max-width:820px;margin:auto}
+details{padding:19px 0;border-bottom:1px solid #e8edf4}
 summary{
-
-cursor:pointer;
-
-font-size:19px;
-
-font-weight:900;
-
-color:var(--navy);
-
-display:flex;
-
-justify-content:space-between;
-
-gap:20px;
-
-list-style:none;
-
+  cursor:pointer;list-style:none;font-size:19px;font-weight:900;color:var(--navy);
+  display:flex;justify-content:space-between;gap:15px
 }
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:25px;color:var(--blue)}
+details[open] summary:after{content:"−"}
+details p{margin-top:11px;color:var(--muted)}
 
-summary::-webkit-details-marker{
-display:none;
-}
-
-summary:after{
-
-content:"+";
-
-font-size:25px;
-
-color:var(--blue);
-
-}
-
-details[open] summary:after{
-
-content:"−";
-
-}
-
-details p{
-
-margin-top:12px;
-
-color:var(--muted);
-
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer{
-
-background:var(--navy);
-
-color:white;
-
-text-align:center;
-
-padding:35px 0 50px;
-
-}
-
-footer .logo{
-
-color:white;
-
-margin-bottom:7px;
-
-}
-
-footer p{
-
-color:rgba(255,255,255,.55);
-
-font-size:13px;
-
-}
-
-
-/* =========================================================
-   MOBILE CTA
-========================================================= */
+footer{background:var(--navy);color:#fff;text-align:center;padding:35px 0 48px}
+footer .logo{color:#fff;margin-bottom:4px}
+footer p{color:rgba(255,255,255,.55);font-size:13px}
 
 .mobile-cta{
-
-display:none;
-
-position:fixed;
-
-left:12px;
-
-right:12px;
-
-bottom:12px;
-
-z-index:999;
-
-background:
-rgba(19,42,85,.96);
-
-padding:9px;
-
-border-radius:16px;
-
-box-shadow:
-0 15px 40px rgba(0,0,0,.25);
-
+  display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:9999;
+  padding:9px;border-radius:16px;background:rgba(20,45,92,.96);box-shadow:0 15px 40px rgba(0,0,0,.25)
 }
+.mobile-cta a{display:block;text-align:center;color:#fff;font-weight:900;padding:13px;border-radius:11px;background:linear-gradient(135deg,#ff3d68,#ff703c)}
 
-.mobile-cta a{
-
-display:block;
-
-text-align:center;
-
-background:
-
-linear-gradient(
-135deg,
-#ff3f67,
-#ff6b3d
-);
-
-color:white;
-
-font-weight:900;
-
-padding:13px;
-
-border-radius:11px;
-
-}
-
-
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
-
-.reveal{
-
-opacity:0;
-
-transform:translateY(28px);
-
-transition:
-opacity .7s ease,
-transform .7s ease;
-
-}
-
-.reveal.show{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s ease,transform .7s ease}
+.reveal.show{opacity:1;transform:none}
 
 @media(max-width:950px){
-
-.hero-grid{
-
-grid-template-columns:1fr;
-
-text-align:center;
-
+  .hero-grid,.emotional-grid,.book-grid,.mockup-grid{grid-template-columns:1fr}
+  .hero-copy,.emotional-copy,.mockup-copy{text-align:center}
+  .hero-visual{max-width:760px;margin:auto}
+  .problem-grid{grid-template-columns:1fr}
+  .book-points{max-width:650px;margin:auto}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .transform-grid{grid-template-columns:1fr}
 }
-
-.hero-copy{
-
-max-width:750px;
-
-margin:auto;
-
-}
-
-.hero-lead{
-
-margin-left:auto;
-
-margin-right:auto;
-
-}
-
-.cta-row{
-
-justify-content:center;
-
-}
-
-.hero-visual{
-
-max-width:760px;
-
-margin:auto;
-
-}
-
-.trust-grid{
-
-grid-template-columns:
-repeat(2,1fr);
-
-}
-
-.problem-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.emotional-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.emotional-copy{
-
-text-align:center;
-
-}
-
-.book-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.book-points{
-
-max-width:650px;
-
-margin:auto;
-
-}
-
-.mockup-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.mockup-copy{
-
-text-align:center;
-
-order:-1;
-
-}
-
-.small-list{
-
-max-width:500px;
-
-margin:
-0 auto 28px;
-
-text-align:left;
-
-}
-
-.transform-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-
 @media(max-width:600px){
-
-.container{
-
-width:
-calc(100% - 26px);
-
+  .container{width:calc(100% - 26px)}
+  .top-strip{font-size:12px}
+  .nav-inner{height:64px}
+  .logo{font-size:22px}
+  .nav-btn{font-size:13px;padding:9px 15px}
+  .hero{padding:45px 0 65px}
+  .hero h1{font-size:47px}
+  .hero-lead{font-size:17px}
+  .emotional-line{font-size:21px}
+  .cta{width:100%;font-size:17px}
+  .float{font-size:11px;padding:9px 11px}
+  .float.a{left:-3px}.float.b{right:-3px}
+  .trust-grid{gap:13px}.trust-item{font-size:12px;flex-direction:column;gap:2px}
+  .section{padding:70px 0}
+  .section-header h2{font-size:40px}.section-header p{font-size:16px}
+  .emotional-copy h2{font-size:42px}
+  .benefit-grid{grid-template-columns:1fr}
+  .benefit{padding:20px}
+  .book-section{padding:75px 0}
+  .cover-tag{right:-5px}
+  .mockup-section{padding:75px 0}
+  .mockup-copy h2{font-size:43px}
+  .final-cta{padding:75px 0}
+  .final-box{padding:45px 20px;border-radius:25px}
+  .final-box h2{font-size:43px}
+  .mobile-cta{display:block}
+  footer{padding-bottom:95px}
 }
-
-.top-strip{
-
-font-size:12px;
-
-}
-
-.nav-inner{
-
-min-height:62px;
-
-}
-
-.logo{
-
-font-size:21px;
-
-}
-
-.nav-button{
-
-font-size:13px;
-
-padding:9px 15px;
-
-}
-
-.hero{
-
-padding:
-45px 0 60px;
-
-}
-
-.hero h1{
-
-font-size:48px;
-
-}
-
-.hero-lead{
-
-font-size:17px;
-
-}
-
-.emotional-line{
-
-font-size:21px;
-
-}
-
-.primary-cta{
-
-width:100%;
-
-font-size:17px;
-
-}
-
-.float-badge{
-
-font-size:11px;
-
-padding:9px 11px;
-
-}
-
-.float-one{
-
-left:-4px;
-
-}
-
-.float-two{
-
-right:-4px;
-
-}
-
-.trust-grid{
-
-grid-template-columns:1fr 1fr;
-
-gap:15px;
-
-}
-
-.trust-item{
-
-font-size:12px;
-
-flex-direction:column;
-
-gap:2px;
-
-}
-
-.section{
-
-padding:70px 0;
-
-}
-
-.section-header{
-
-margin-bottom:38px;
-
-}
-
-.section-header h2{
-
-font-size:40px;
-
-}
-
-.section-header p{
-
-font-size:16px;
-
-}
-
-.emotional-copy h2{
-
-font-size:42px;
-
-}
-
-.benefit-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.benefit{
-
-padding:20px;
-
-}
-
-.book-section{
-
-padding:75px 0;
-
-}
-
-.cover-tag{
-
-right:-5px;
-
-font-size:12px;
-
-}
-
-.mockup-section{
-
-padding:75px 0;
-
-}
-
-.mockup-copy h2{
-
-font-size:43px;
-
-}
-
-.final-cta{
-
-padding:75px 0;
-
-}
-
-.final-box{
-
-padding:
-45px 20px;
-
-border-radius:25px;
-
-}
-
-.final-box h2{
-
-font-size:43px;
-
-}
-
-.mobile-cta{
-
-display:block;
-
-}
-
-footer{
-
-padding-bottom:95px;
-
-}
-
-}
-
-
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
-
 @media(prefers-reduced-motion:reduce){
-
-*{
-
-animation:none !important;
-
-transition:none !important;
-
-scroll-behavior:auto !important;
-
+  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
-
-}
-
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================================================
-     TOP STRIP
-========================================================= -->
-
-<div class="top-strip">
-
-🎮 Your child's love of <span>play</span> may be an opportunity — not a problem.
-
-</div>
-
-
-<!-- =========================================================
-     NAV
-========================================================= -->
+<div class="top-strip">🎮 Your child's love of <span>play</span> may be an opportunity — not a problem.</div>
 
 <nav class="nav">
-
-<div class="container nav-inner">
-
-<div class="logo">
-
-Play <span>→</span> Learn
-
-</div>
-
-<a
-href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-class="nav-button buy-button"
-target="_blank"
-rel="noopener"
->
-
-Get the eBook →
-
-</a>
-
-</div>
-
+  <div class="container nav-inner">
+    <div class="logo">Play <span>→</span> Learn</div>
+    <a class="nav-btn buy-button" href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time" target="_blank" rel="noopener">Get the eBook →</a>
+  </div>
 </nav>
 
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="badge">❤️ For parents who hear “I want to play!” all the time</div>
+      <h1>What if you didn't have to fight your child's love of <span class="pink">play?</span></h1>
+      <p class="hero-lead">If your child would rather play than study, you may have found yourself asking: <strong>“How do I get my child to learn without turning every day into a battle?”</strong></p>
+      <div class="emotional-line">Maybe the answer isn't less play. Maybe it's better use of play.</div>
+      <a class="cta buy-button" href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time" target="_blank" rel="noopener">📖 Get the eBook & Start Reading →</a>
+      <div class="cta-note">Secure checkout through Gumroad • Read on your device</div>
+    </div>
 
-
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<header class="hero">
-
-<div class="container hero-grid">
-
-
-<div class="hero-copy">
-
-<div class="badge">
-
-❤️ For parents who hear "I want to play!" all the time
-
-</div>
-
-
-<h1>
-
-What if you didn't have to fight your child's love of
-
-<span class="play">play?</span>
-
-</h1>
-
-
-<p class="hero-lead">
-
-If your child would rather play than study, you may have
-found yourself asking:
-
-<strong>
-"How do I get my child to learn without turning every day into a battle?"
-</strong>
-
-</p>
-
-
-<div class="emotional-line">
-
-Maybe the answer isn't less play. Maybe it's better use of play.
-
-</div>
-
-
-<div class="cta-row">
-
-<a
-href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-class="primary-cta buy-button"
-target="_blank"
-rel="noopener"
->
-
-📖 Get the eBook & Start Reading →
-
-</a>
-
-</div>
-
-
-<div class="cta-note">
-
-Secure checkout through Gumroad • Read on your device
-
-</div>
-
-</div>
-
-
-
-<!-- HERO PRODUCT -->
-
-<div class="hero-visual">
-
-<div class="float-badge float-one">
-
-✓ Calm learning ideas
-
-</div>
-
-<div class="float-badge float-two">
-
-🎮 Play → Learn
-
-</div>
-
-
-<img
-src="my-child-wants-to-play-book-mockup.jpg"
-alt="My Child Just Wants to Play All the Time ebook physical book mockup"
-class="hero-product"
-loading="eager"
->
-
-</div>
-
-
-</div>
-
-</header>
-
-
-
-<!-- =========================================================
-     TRUST
-========================================================= -->
+    <div class="hero-visual">
+      <div class="float a">✓ Calm learning ideas</div>
+      <div class="float b">🎮 Play → Learn</div>
+      <div class="hero-image-frame">
+        <img class="hero-image" loading="eager"
+          src="./my-child-wants-to-play-hero-banner.png.png"
+          alt="My Child Just Wants to Play All the Time ebook advertisement"
+          onerror="this.onerror=null;this.src='./my-child-wants-to-play-book-mockup.jpg';">
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="trust">
-
-<div class="container trust-grid">
-
-
-<div class="trust-item">
-
-<div class="trust-icon">🎮</div>
-
-<div>Play-based ideas</div>
-
-</div>
-
-
-<div class="trust-item">
-
-<div class="trust-icon">❤️</div>
-
-<div>Parent-child connection</div>
-
-</div>
-
-
-<div class="trust-item">
-
-<div class="trust-icon">🧠</div>
-
-<div>Engaging learning</div>
-
-</div>
-
-
-<div class="trust-item">
-
-<div class="trust-icon">📖</div>
-
-<div>Practical ebook</div>
-
-</div>
-
-
-</div>
-
+  <div class="container trust-grid">
+    <div class="trust-item"><b>🎮</b> Play-based ideas</div>
+    <div class="trust-item"><b>❤️</b> Parent-child connection</div>
+    <div class="trust-item"><b>🧠</b> Engaging learning</div>
+    <div class="trust-item"><b>📖</b> Practical ebook</div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     PROBLEM
-========================================================= -->
 
 <section class="section problem">
-
-<div class="container">
-
-
-<div class="section-header reveal">
-
-<div class="section-kicker">
-
-THE DAILY STRUGGLE
-
-</div>
-
-<h2>
-
-Does this sound familiar?
-
-</h2>
-
-<p>
-
-You want your child to learn. Your child wants to play.
-And sometimes those two things seem to be pulling in opposite directions.
-
-</p>
-
-</div>
-
-
-
-<div class="problem-grid">
-
-
-<div class="problem-card reveal">
-
-<div class="problem-icon">
-
-🎮
-
-</div>
-
-<h3>
-
-"I want to play!"
-
-</h3>
-
-<p>
-
-Every time study time arrives, your child seems to find
-something much more exciting to do.
-
-</p>
-
-</div>
-
-
-
-<div class="problem-card reveal">
-
-<div class="problem-icon">
-
-😩
-
-</div>
-
-<h3>
-
-The repeated reminders
-
-</h3>
-
-<p>
-
-"Come and study."
-
-"Just five minutes."
-
-"Please finish this."
-
-The same conversation can happen again and again.
-
-</p>
-
-</div>
-
-
-
-<div class="problem-card reveal">
-
-<div class="problem-icon">
-
-💔
-
-</div>
-
-<h3>
-
-Nobody wants the battle
-
-</h3>
-
-<p>
-
-You don't want your child to hate learning.
-And you don't want every learning moment to end in frustration.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="kicker">THE DAILY STRUGGLE</div>
+      <h2>Does this sound familiar?</h2>
+      <p>You want your child to learn. Your child wants to play. Sometimes those two things can feel like they are pulling in opposite directions.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="card reveal"><div class="card-icon">🎮</div><h3>“I want to play!”</h3><p>Every time study time arrives, your child seems to find something much more exciting to do.</p></div>
+      <div class="card reveal"><div class="card-icon">😩</div><h3>The repeated reminders</h3><p>“Come and study.” “Just five minutes.” “Please finish this.” The same conversation can happen again and again.</p></div>
+      <div class="card reveal"><div class="card-icon">💔</div><h3>Nobody wants the battle</h3><p>You don't want your child to hate learning. You don't want every learning moment to end in frustration.</p></div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     EMOTIONAL SECTION
-========================================================= -->
 
 <section class="section emotional">
-
-<div class="container emotional-grid">
-
-
-<div class="reveal">
-
-<img
-src="parent-child-playing-learning.jpg.png"
-alt="Parent and child learning together through play"
-class="emotional-image"
-loading="lazy"
->
-
-</div>
-
-
-<div class="emotional-copy reveal">
-
-<div class="section-kicker">
-
-A DIFFERENT WAY TO LOOK AT IT
-
-</div>
-
-<h2>
-
-Your child's love of play may be a
-
-<span>clue.</span>
-
-</h2>
-
-
-<p>
-
-Children naturally become absorbed when something feels
-interesting, active and enjoyable.
-
-</p>
-
-
-<p>
-
-Instead of seeing play and learning as enemies, this ebook
-explores how play can become part of the learning experience.
-
-</p>
-
-
-<div class="quote">
-
-"Maybe you don't need to take play away. Maybe you can bring learning into it."
-
-</div>
-
-</div>
-
-
-</div>
-
+  <div class="container emotional-grid">
+    <div class="image-wrap reveal">
+      <img class="section-image" loading="lazy"
+        src="./parent-child-playing-learning.jpg.png"
+        alt="Parent and child playing and learning together"
+        onerror="this.onerror=null;this.src='./child-playing-learning-ebook.jpg.png';">
+      <div class="image-chip">❤️ Play together • Learn together</div>
+    </div>
+    <div class="emotional-copy reveal">
+      <div class="kicker">A DIFFERENT WAY TO LOOK AT IT</div>
+      <h2>Your child's love of play may be a <span>clue.</span></h2>
+      <p>Children naturally become absorbed when something feels interesting, active and enjoyable.</p>
+      <p>Instead of seeing play and learning as enemies, this ebook explores how play can become part of the learning experience.</p>
+      <div class="quote">“Maybe you don't need to take play away. Maybe you can bring learning into it.”</div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     BENEFITS
-========================================================= -->
 
 <section class="section">
-
-<div class="container">
-
-
-<div class="section-header reveal">
-
-<div class="section-kicker">
-
-WHAT YOU CAN EXPLORE
-
-</div>
-
-<h2>
-
-Turn everyday play into learning opportunities
-
-</h2>
-
-<p>
-
-Simple ideas can change the way a child experiences
-practice, curiosity and progress.
-
-</p>
-
-</div>
-
-
-
-<div class="benefit-grid">
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">🎯</div>
-
-<div>
-
-<h3>
-
-Create small challenges
-
-</h3>
-
-<p>
-
-Turn a big learning task into smaller, achievable
-missions that feel easier to begin.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">🏆</div>
-
-<div>
-
-<h3>
-
-Make progress visible
-
-</h3>
-
-<p>
-
-Use simple goals, progress and rewards to give children
-a reason to feel proud of their effort.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">🧩</div>
-
-<div>
-
-<h3>
-
-Make learning interactive
-
-</h3>
-
-<p>
-
-Move beyond simply sitting and memorizing by bringing
-activity and participation into learning.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">💡</div>
-
-<div>
-
-<h3>
-
-Encourage curiosity
-
-</h3>
-
-<p>
-
-Give children opportunities to explore, ask questions
-and discover things for themselves.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">❤️</div>
-
-<div>
-
-<h3>
-
-Protect the connection
-
-</h3>
-
-<p>
-
-Learning doesn't have to become a daily power struggle
-between parent and child.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="benefit reveal">
-
-<div class="benefit-icon">🚀</div>
-
-<div>
-
-<h3>
-
-Start with small changes
-
-</h3>
-
-<p>
-
-You don't need to transform everything overnight.
-Small changes can be a starting point.
-
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="kicker">WHAT YOU CAN EXPLORE</div>
+      <h2>Turn everyday play into learning opportunities</h2>
+      <p>Simple ideas can change the way a child experiences practice, curiosity and progress.</p>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit reveal"><div class="benefit-icon">🎯</div><div><h3>Create small challenges</h3><p>Turn a big learning task into smaller, achievable missions that feel easier to begin.</p></div></div>
+      <div class="benefit reveal"><div class="benefit-icon">🏆</div><div><h3>Make progress visible</h3><p>Use simple goals and progress to give children a reason to feel proud of their effort.</p></div></div>
+      <div class="benefit reveal"><div class="benefit-icon">🧩</div><div><h3>Make learning interactive</h3><p>Move beyond simply sitting and memorizing by bringing activity and participation into learning.</p></div></div>
+      <div class="benefit reveal"><div class="benefit-icon">💡</div><div><h3>Encourage curiosity</h3><p>Give children opportunities to explore, ask questions and discover things for themselves.</p></div></div>
+      <div class="benefit reveal"><div class="benefit-icon">❤️</div><div><h3>Protect the connection</h3><p>Learning doesn't have to become a daily power struggle between parent and child.</p></div></div>
+      <div class="benefit reveal"><div class="benefit-icon">🚀</div><div><h3>Start with small changes</h3><p>You don't need to transform everything overnight. Small changes can be a starting point.</p></div></div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     REAL EBOOK COVER
-========================================================= -->
 
 <section class="section book-section">
-
-<div class="container">
-
-
-<div class="section-header reveal">
-
-<div class="section-kicker">
-
-THE EBOOK
-
-</div>
-
-<h2>
-
-See exactly what you're getting
-
-</h2>
-
-<p>
-
-A calm, parent-focused guide built around one simple
-question: what if play could become part of learning?
-
-</p>
-
-</div>
-
-
-
-<div class="book-grid">
-
-
-<div class="cover-wrap reveal">
-
-<img
-src="my-child-wants-to-play-ebook-cover.png.png"
-alt="My Child Just Wants to Play All the Time ebook cover"
-class="cover"
-loading="lazy"
->
-
-<div class="cover-tag">
-
-📖 Your copy
-
-</div>
-
-</div>
-
-
-
-<div class="book-points">
-
-
-<div class="book-point reveal">
-
-<div class="check">✓</div>
-
-<div>
-
-<h3>
-
-Understand the attraction to play
-
-</h3>
-
-<p>
-
-Explore why play can be so much more compelling
-than traditional study.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="book-point reveal">
-
-<div class="check">✓</div>
-
-<div>
-
-<h3>
-
-Reimagine study time
-
-</h3>
-
-<p>
-
-Explore ways to introduce game-like elements into
-everyday learning.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="book-point reveal">
-
-<div class="check">✓</div>
-
-<div>
-
-<h3>
-
-Reduce unnecessary pressure
-
-</h3>
-
-<p>
-
-Look for calmer ways to approach learning without
-making every moment a confrontation.
-
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="book-point reveal">
-
-<div class="check">✓</div>
-
-<div>
-
-<h3>
-
-Build a more positive learning experience
-
-</h3>
-
-<p>
-
-Focus on curiosity, participation and the small
-steps that can make learning feel more inviting.
-
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="kicker">THE EBOOK</div>
+      <h2>See exactly what you're getting</h2>
+      <p>A calm, parent-focused guide built around one simple question: what if play could become part of learning?</p>
+    </div>
+    <div class="book-grid">
+      <div class="cover-wrap reveal">
+        <img class="cover" loading="lazy"
+          src="./my-child-wants-to-play-ebook-cover.png.png"
+          alt="My Child Just Wants to Play All the Time ebook cover"
+          onerror="this.onerror=null;this.src='./my-child-wants-to-play-book-mockup.jpg';">
+        <div class="cover-tag">📖 Your copy</div>
+      </div>
+      <div class="book-points">
+        <div class="book-point reveal"><div class="check">✓</div><div><h3>Understand the attraction to play</h3><p>Explore why play can be so much more compelling than traditional study.</p></div></div>
+        <div class="book-point reveal"><div class="check">✓</div><div><h3>Reimagine study time</h3><p>Explore ways to introduce game-like elements into everyday learning.</p></div></div>
+        <div class="book-point reveal"><div class="check">✓</div><div><h3>Reduce unnecessary pressure</h3><p>Look for calmer ways to approach learning without making every moment a confrontation.</p></div></div>
+        <div class="book-point reveal"><div class="check">✓</div><div><h3>Build a positive learning experience</h3><p>Focus on curiosity, participation and small steps that can make learning feel more inviting.</p></div></div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     BEFORE / AFTER
-========================================================= -->
 
 <section class="section transformation">
-
-<div class="container">
-
-
-<div class="section-header reveal">
-
-<div class="section-kicker">
-
-THE SHIFT
-
-</div>
-
-<h2>
-
-From "Stop playing" to "Let's learn through play"
-
-</h2>
-
-<p>
-
-The goal isn't to turn every lesson into a game.
-It's to change the way you approach the moments when
-your child naturally wants to play.
-
-</p>
-
-</div>
-
-
-
-<div class="transform-grid">
-
-
-<div class="transform-card before reveal">
-
-<h3>
-
-The old struggle
-
-</h3>
-
-<ul>
-
-<li>
-
-Repeatedly asking your child to study.
-
-</li>
-
-<li>
-
-Play feels like the reward that must wait.
-
-</li>
-
-<li>
-
-Learning can become associated with pressure.
-
-</li>
-
-<li>
-
-Parent and child become frustrated.
-
-</li>
-
-</ul>
-
-</div>
-
-
-
-<div class="transform-card after reveal">
-
-<h3>
-
-A different possibility
-
-</h3>
-
-<ul>
-
-<li>
-
-Break learning into small challenges.
-
-</li>
-
-<li>
-
-Bring movement and play into practice.
-
-</li>
-
-<li>
-
-Use curiosity to encourage participation.
-
-</li>
-
-<li>
-
-Celebrate progress instead of only completion.
-
-</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="kicker">THE SHIFT</div>
+      <h2>From “Stop playing” to “Let's learn through play”</h2>
+      <p>The goal isn't to turn every lesson into a game. It's to change the way you approach the moments when your child naturally wants to play.</p>
+    </div>
+    <div class="transform-grid">
+      <div class="transform-card before reveal"><h3>The old struggle</h3><ul>
+        <li>Repeatedly asking your child to study.</li>
+        <li>Play feels like the reward that must wait.</li>
+        <li>Learning can become associated with pressure.</li>
+        <li>Parent and child become frustrated.</li>
+      </ul></div>
+      <div class="transform-card after reveal"><h3>A different possibility</h3><ul>
+        <li>Break learning into small challenges.</li>
+        <li>Bring movement and play into practice.</li>
+        <li>Use curiosity to encourage participation.</li>
+        <li>Celebrate progress instead of only completion.</li>
+      </ul></div>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     PRODUCT MOCKUP CTA
-========================================================= -->
 
 <section class="mockup-section">
-
-<div class="container mockup-grid">
-
-
-<div class="reveal">
-
-<img
-src="my-child-wants-to-play-book-mockup.jpg"
-alt="My Child Just Wants to Play All the Time physical book style ebook advertisement"
-class="mockup"
-loading="lazy"
->
-
-</div>
-
-
-
-<div class="mockup-copy reveal">
-
-<div class="section-kicker">
-
-A SMALL IDEA WITH A BIG POSSIBILITY
-
-</div>
-
-<h2>
-
-What if learning could feel a little more like
-
-<span>play?</span>
-
-</h2>
-
-<p>
-
-You don't have to choose between your child's happiness
-and their learning.
-
-Start by looking at play differently.
-
-</p>
-
-
-
-<div class="small-list">
-
-<div>
-
-<span>✓</span>
-Simple ideas for everyday learning
-
-</div>
-
-<div>
-
-<span>✓</span>
-Play-based approach
-
-</div>
-
-<div>
-
-<span>✓</span>
-Parent-friendly perspective
-
-</div>
-
-<div>
-
-<span>✓</span>
-Read at your own pace
-
-</div>
-
-</div>
-
-
-
-<a
-href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-class="primary-cta buy-button"
-target="_blank"
-rel="noopener"
->
-
-📖 Get My Copy Now →
-
-</a>
-
-</div>
-
-
-</div>
-
+  <div class="container mockup-grid">
+    <div class="reveal">
+      <img class="mockup" loading="lazy"
+        src="./my-child-wants-to-play-book-mockup.jpg"
+        alt="My Child Just Wants to Play All the Time physical book style mockup"
+        onerror="this.onerror=null;this.src='./my-child-wants-to-play-ebook-cover.png.png';">
+    </div>
+    <div class="mockup-copy reveal">
+      <div class="kicker">A SMALL IDEA WITH A BIG POSSIBILITY</div>
+      <h2>What if learning could feel a little more like <span>play?</span></h2>
+      <p>You don't have to choose between your child's happiness and their learning. Start by looking at play differently.</p>
+      <div class="small-list">
+        <div><span>✓</span> Simple ideas for everyday learning</div>
+        <div><span>✓</span> Play-based approach</div>
+        <div><span>✓</span> Parent-friendly perspective</div>
+        <div><span>✓</span> Read at your own pace</div>
+      </div>
+      <a class="cta buy-button" href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time" target="_blank" rel="noopener">📖 Get My Copy Now →</a>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     FINAL EMOTIONAL CTA
-========================================================= -->
 
 <section class="final-cta">
-
-<div class="container">
-
-
-<div class="final-box reveal">
-
-
-<div class="final-emoji">
-
-❤️
-
-</div>
-
-
-<h2>
-
-Your child may not be saying
-"I don't want to learn."
-
-</h2>
-
-
-<p>
-
-They may simply be saying,
-"I want to play."
-
-What if that could become the beginning of a different
-kind of learning experience?
-
-</p>
-
-
-<a
-href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-class="primary-cta buy-button"
-target="_blank"
-rel="noopener"
->
-
-🎮 Turn Play Into Learning — Get the eBook →
-
-</a>
-
-
-<p style="
-font-size:12px;
-margin-top:14px;
-margin-bottom:0;
-">
-
-You'll be taken to Gumroad to complete your purchase.
-
-</p>
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="final-box reveal">
+      <div class="final-emoji">❤️</div>
+      <h2>Your child may not be saying “I don't want to learn.”</h2>
+      <p>They may simply be saying, <strong>“I want to play.”</strong> What if that could become the beginning of a different kind of learning experience?</p>
+      <a class="cta buy-button" href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time" target="_blank" rel="noopener">🎮 Turn Play Into Learning — Get the eBook →</a>
+      <p style="font-size:12px;margin-top:13px;margin-bottom:0">You'll be taken to Gumroad to complete your purchase.</p>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- =========================================================
-     FAQ
-========================================================= -->
 
 <section class="section faq">
-
-<div class="container">
-
-
-<div class="section-header reveal">
-
-<div class="section-kicker">
-
-QUESTIONS
-
-</div>
-
-<h2>
-
-Before you get started
-
-</h2>
-
-</div>
-
-
-
-<div class="faq-list">
-
-
-<details class="reveal">
-
-<summary>
-
-Is this about stopping children from playing?
-
-</summary>
-
-<p>
-
-No. The central idea is to explore how a child's natural
-interest in play can become part of a more engaging
-learning experience.
-
-</p>
-
-</details>
-
-
-
-<details class="reveal">
-
-<summary>
-
-Do I need expensive toys or equipment?
-
-</summary>
-
-<p>
-
-The approach focuses on simple ideas rather than requiring
-expensive equipment or complicated technology.
-
-</p>
-
-</details>
-
-
-
-<details class="reveal">
-
-<summary>
-
-Is this a replacement for school or professional advice?
-
-</summary>
-
-<p>
-
-No. This is a practical parenting ebook focused on
-approaches to everyday learning. It is not intended to
-replace professional educational or medical advice.
-
-</p>
-
-</details>
-
-
-
-<details class="reveal">
-
-<summary>
-
-How do I get the ebook?
-
-</summary>
-
-<p>
-
-Click any "Get the eBook" button on this page. You'll be
-taken to Gumroad where you can complete the purchase.
-
-</p>
-
-</details>
-
-
-</div>
-
-</div>
-
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="kicker">QUESTIONS</div><h2>Before you get started</h2>
+    </div>
+    <div class="faq-list">
+      <details class="reveal"><summary>Is this about stopping children from playing?</summary><p>No. The idea is to explore how a child's natural interest in play can become part of a more engaging learning experience.</p></details>
+      <details class="reveal"><summary>Do I need expensive toys or equipment?</summary><p>The approach focuses on simple ideas rather than requiring expensive equipment or complicated technology.</p></details>
+      <details class="reveal"><summary>Is this a replacement for school?</summary><p>No. This is a practical parenting ebook focused on approaches to everyday learning.</p></details>
+      <details class="reveal"><summary>How do I get the ebook?</summary><p>Click any “Get the eBook” button. You'll be taken to Gumroad where you can complete the purchase.</p></details>
+    </div>
+  </div>
 </section>
 
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
 <footer>
-
-<div class="container">
-
-<div class="logo">
-
-Play <span>→</span> Learn
-
-</div>
-
-<p>
-
-My Child Just Wants to Play All the Time
-
-</p>
-
-<p>
-
-© 2026
-
-</p>
-
-</div>
-
+  <div class="container">
+    <div class="logo">Play <span>→</span> Learn</div>
+    <p>My Child Just Wants to Play All the Time</p>
+    <p>© 2026</p>
+  </div>
 </footer>
 
-
-
-<!-- =========================================================
-     MOBILE CTA
-========================================================= -->
-
 <div class="mobile-cta">
-
-<a
-href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-class="buy-button"
-target="_blank"
-rel="noopener"
->
-
-📖 Get the eBook →
-
-</a>
-
+  <a class="buy-button" href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time" target="_blank" rel="noopener">📖 Get the eBook →</a>
 </div>
 
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
 <script>
-
-
-/* =========================================================
-   META PIXEL - INITIATE CHECKOUT
-========================================================= */
-
-document.querySelectorAll(".buy-button")
-.forEach(function(button){
-
-button.addEventListener("click",function(){
-
-if(typeof fbq === "function"){
-
-fbq(
-"track",
-"InitiateCheckout",
-{
-
-content_name:
-"My Child Just Wants to Play All the Time",
-
-content_type:
-"product"
-
-}
-);
-
-}
-
+document.querySelectorAll(".buy-button").forEach(function(button){
+  button.addEventListener("click",function(){
+    if(typeof fbq==="function"){
+      fbq("track","InitiateCheckout",{
+        content_name:"My Child Just Wants to Play All the Time",
+        content_type:"product"
+      });
+    }
+  });
 });
 
-});
-
-
-
-/* =========================================================
-   SCROLL ANIMATION
-========================================================= */
-
-const revealElements =
-document.querySelectorAll(".reveal");
-
-
-const observer =
-new IntersectionObserver(
-
-function(entries,observer){
-
-entries.forEach(function(entry){
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
-
-observer.unobserve(entry.target);
-
-}
-
-});
-
-},
-
-{
-threshold:.12
-}
-
-);
-
-
-revealElements.forEach(function(element){
-
-observer.observe(element);
-
-});
-
-
-
-/* =========================================================
-   BUTTON PRESS EFFECT
-========================================================= */
-
-document.querySelectorAll(".primary-cta")
-.forEach(function(button){
-
-button.addEventListener("click",function(){
-
-button.style.transform="scale(.97)";
-
-setTimeout(function(){
-
-button.style.transform="";
-
-},150);
-
-});
-
-});
-
-
+const revealElements=document.querySelectorAll(".reveal");
+const observer=new IntersectionObserver(function(entries,obs){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+      obs.unobserve(entry.target);
+    }
+  });
+},{threshold:.10});
+revealElements.forEach(function(el){observer.observe(el);});
 </script>
 
-
 </body>
-
 </html>
