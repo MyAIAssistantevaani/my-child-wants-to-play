@@ -1,2006 +1,3439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>My Child Just Wants to Play All the Time | Turn Study Time Into Play</title>
-
-  <meta
-    name="description"
-    content="What if your child's love of play could become the secret to making study time easier? Discover practical ways to turn learning into games and make studying more engaging."
-  >
-
-  <meta name="robots" content="index, follow">
-
-  <!-- Facebook / Instagram sharing -->
-  <meta property="og:title" content="My Child Just Wants to Play All the Time">
-  <meta
-    property="og:description"
-    content="Turn your child's love of play into a better way to learn. Discover how to make study time feel more like play."
-  >
-  <meta property="og:type" content="website">
-
-  <!-- =========================================================
-       META PIXEL
-       Pixel ID: 2032621154052189
-       ========================================================= -->
-
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-
-  fbq('init', '2032621154052189');
-  fbq('track', 'PageView');
-  fbq('track', 'ViewContent');
-  </script>
-
-  <noscript>
-    <img
-      height="1"
-      width="1"
-      style="display:none"
-      src="https://www.facebook.com/tr?id=2032621154052189&ev=PageView&noscript=1"
-      alt=""
-    />
-  </noscript>
-
-  <!-- =========================================================
-       GOOGLE FONT
-       ========================================================= -->
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
-
-  <style>
-
-    /* =========================================================
-       GLOBAL
-       ========================================================= */
-
-    :root {
-      --purple: #6c4cff;
-      --purple-dark: #4b2fd4;
-      --pink: #ff5d8f;
-      --yellow: #ffd84d;
-      --green: #35c98b;
-      --blue: #48a9ff;
-      --dark: #17152b;
-      --text: #29263d;
-      --muted: #6f6b80;
-      --cream: #fffaf2;
-      --white: #ffffff;
-      --shadow: 0 20px 60px rgba(38, 25, 92, 0.13);
-      --radius: 24px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Nunito", sans-serif;
-      color: var(--text);
-      background: var(--cream);
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
-
-    h1,
-    h2,
-    h3,
-    .logo {
-      font-family: "Baloo 2", cursive;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1120px, calc(100% - 40px));
-      margin: auto;
-    }
-
-    /* =========================================================
-       ANIMATED BACKGROUND SHAPES
-       ========================================================= */
-
-    .blob {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(2px);
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .blob-1 {
-      width: 280px;
-      height: 280px;
-      background: rgba(108, 76, 255, 0.14);
-      top: 80px;
-      left: -120px;
-      animation: floatBlob 7s ease-in-out infinite;
-    }
-
-    .blob-2 {
-      width: 220px;
-      height: 220px;
-      background: rgba(255, 93, 143, 0.12);
-      top: 420px;
-      right: -80px;
-      animation: floatBlob 8s ease-in-out infinite reverse;
-    }
-
-    @keyframes floatBlob {
-      0%, 100% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-25px) rotate(8deg);
-      }
-    }
-
-    /* =========================================================
-       TOP BAR
-       ========================================================= */
-
-    .topbar {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 10px 15px;
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: .2px;
-    }
-
-    .topbar span {
-      color: var(--yellow);
-    }
-
-    /* =========================================================
-       NAV
-       ========================================================= */
-
-    nav {
-      position: relative;
-      z-index: 20;
-      background: rgba(255, 250, 242, 0.88);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(0,0,0,.05);
-    }
-
-    .nav-inner {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .logo {
-      font-size: 25px;
-      font-weight: 800;
-      color: var(--purple);
-    }
-
-    .nav-cta {
-      background: var(--purple);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 999px;
-      font-weight: 900;
-      box-shadow: 0 8px 20px rgba(108,76,255,.25);
-      transition: .25s ease;
-    }
-
-    .nav-cta:hover {
-      transform: translateY(-2px);
-      background: var(--purple-dark);
-    }
-
-    /* =========================================================
-       HERO
-       ========================================================= */
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 80px 0 100px;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(108,76,255,.10), transparent 25%),
-        radial-gradient(circle at 85% 20%, rgba(255,93,143,.10), transparent 25%),
-        var(--cream);
-    }
-
-    .hero-grid {
-      position: relative;
-      z-index: 2;
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      align-items: center;
-      gap: 70px;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #eeeaff;
-      color: var(--purple-dark);
-      padding: 8px 16px;
-      border-radius: 999px;
-      font-weight: 900;
-      font-size: 14px;
-      margin-bottom: 18px;
-      animation: fadeUp .8s ease both;
-    }
-
-    .hero h1 {
-      font-size: clamp(48px, 6vw, 76px);
-      line-height: .98;
-      letter-spacing: -1px;
-      color: var(--dark);
-      margin-bottom: 22px;
-      animation: fadeUp .8s .1s ease both;
-    }
-
-    .hero h1 .highlight {
-      color: var(--purple);
-      position: relative;
-      display: inline-block;
-    }
-
-    .hero h1 .highlight::after {
-      content: "";
-      position: absolute;
-      left: 4%;
-      right: 4%;
-      bottom: -2px;
-      height: 9px;
-      background: var(--yellow);
-      border-radius: 999px;
-      transform: rotate(-2deg);
-      z-index: -1;
-    }
-
-    .hero-text {
-      font-size: 19px;
-      color: var(--muted);
-      max-width: 650px;
-      margin-bottom: 28px;
-      animation: fadeUp .8s .2s ease both;
-    }
-
-    .hero-text strong {
-      color: var(--text);
-    }
-
-    /* =========================================================
-       CTA BUTTON
-       ========================================================= */
-
-    .cta-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 14px;
-      animation: fadeUp .8s .3s ease both;
-    }
-
-    .cta {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: linear-gradient(135deg, var(--purple), #8a6cff);
-      color: white;
-      padding: 17px 30px;
-      border-radius: 16px;
-      font-size: 18px;
-      font-weight: 900;
-      box-shadow: 0 14px 30px rgba(108,76,255,.28);
-      transition: transform .25s ease, box-shadow .25s ease;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .cta::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -120%;
-      width: 80%;
-      height: 100%;
-      background: linear-gradient(
-        100deg,
-        transparent,
-        rgba(255,255,255,.35),
-        transparent
-      );
-      transform: skewX(-20deg);
-      animation: shine 3.5s infinite;
-    }
-
-    .cta:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 20px 40px rgba(108,76,255,.36);
-    }
-
-    @keyframes shine {
-      0%, 60% {
-        left: -120%;
-      }
-      100% {
-        left: 140%;
-      }
-    }
-
-    .cta-subtext {
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    /* =========================================================
-       HERO BOOK
-       ========================================================= */
-
-    .book-area {
-      position: relative;
-      min-height: 520px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      animation: fadeIn 1s .3s ease both;
-    }
-
-    .book-glow {
-      position: absolute;
-      width: 360px;
-      height: 360px;
-      border-radius: 50%;
-      background: radial-gradient(
-        circle,
-        rgba(108,76,255,.25),
-        rgba(108,76,255,0) 68%
-      );
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
-
-    @keyframes pulseGlow {
-      0%,100% {
-        transform: scale(.95);
-        opacity: .7;
-      }
-      50% {
-        transform: scale(1.08);
-        opacity: 1;
-      }
-    }
-
-    .book {
-      position: relative;
-      width: 285px;
-      min-height: 400px;
-      border-radius: 12px 24px 24px 12px;
-      padding: 30px 25px;
-      background:
-        linear-gradient(145deg, #765aff, #4c31d5);
-      color: white;
-      box-shadow:
-        -14px 15px 0 rgba(65, 44, 169, .25),
-        0 35px 55px rgba(43,30,100,.28);
-      transform: rotate(-5deg);
-      animation: bookFloat 4s ease-in-out infinite;
-      z-index: 2;
-    }
-
-    @keyframes bookFloat {
-      0%,100% {
-        transform: rotate(-5deg) translateY(0);
-      }
-      50% {
-        transform: rotate(-2deg) translateY(-14px);
-      }
-    }
-
-    .book::before {
-      content: "";
-      position: absolute;
-      left: 13px;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: rgba(255,255,255,.2);
-      border-radius: 10px;
-    }
-
-    .book-kicker {
-      font-size: 13px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      opacity: .9;
-    }
-
-    .book h2 {
-      font-size: 42px;
-      line-height: .95;
-      margin: 28px 0 20px;
-    }
-
-    .book-play {
-      font-size: 68px;
-      line-height: 1;
-      margin: 18px 0;
-    }
-
-    .book-bottom {
-      position: absolute;
-      bottom: 25px;
-      left: 28px;
-      right: 28px;
-      font-weight: 800;
-      font-size: 13px;
-      border-top: 1px solid rgba(255,255,255,.25);
-      padding-top: 15px;
-    }
-
-    .floating-card {
-      position: absolute;
-      z-index: 5;
-      background: white;
-      padding: 13px 17px;
-      border-radius: 15px;
-      box-shadow: var(--shadow);
-      font-weight: 900;
-      font-size: 14px;
-      animation: cardFloat 3.5s ease-in-out infinite;
-    }
-
-    .card-1 {
-      top: 65px;
-      right: 5px;
-      color: var(--green);
-    }
-
-    .card-2 {
-      bottom: 80px;
-      left: 0;
-      color: var(--purple);
-      animation-delay: .8s;
-    }
-
-    .card-3 {
-      top: 180px;
-      left: -10px;
-      color: var(--pink);
-      animation-delay: 1.4s;
-    }
-
-    @keyframes cardFloat {
-      0%,100% {
-        transform: translateY(0) rotate(1deg);
-      }
-      50% {
-        transform: translateY(-9px) rotate(-1deg);
-      }
-    }
-
-    /* =========================================================
-       TRUST STRIP
-       ========================================================= */
-
-    .trust {
-      background: white;
-      padding: 24px 0;
-      border-top: 1px solid rgba(0,0,0,.04);
-      border-bottom: 1px solid rgba(0,0,0,.04);
-    }
-
-    .trust-inner {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      text-align: center;
-    }
-
-    .trust-item {
-      font-size: 14px;
-      font-weight: 900;
-      color: var(--muted);
-    }
-
-    .trust-item span {
-      margin-right: 6px;
-      font-size: 18px;
-    }
-
-    /* =========================================================
-       SECTIONS
-       ========================================================= */
-
-    section.content-section {
-      padding: 100px 0;
-    }
-
-    .section-heading {
-      max-width: 760px;
-      margin: 0 auto 55px;
-      text-align: center;
-    }
-
-    .section-label {
-      color: var(--purple);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 10px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(38px, 5vw, 56px);
-      line-height: 1;
-      color: var(--dark);
-      margin-bottom: 18px;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    /* =========================================================
-       PROBLEM
-       ========================================================= */
-
-    .problem {
-      background: white;
-    }
-
-    .problem-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 22px;
-    }
-
-    .problem-card {
-      padding: 32px 26px;
-      border-radius: var(--radius);
-      background: var(--cream);
-      border: 1px solid rgba(0,0,0,.05);
-      transition: .3s ease;
-    }
-
-    .problem-card:hover {
-      transform: translateY(-7px);
-      box-shadow: var(--shadow);
-    }
-
-    .problem-icon {
-      font-size: 42px;
-      margin-bottom: 16px;
-    }
-
-    .problem-card h3 {
-      font-size: 25px;
-      margin-bottom: 9px;
-    }
-
-    .problem-card p {
-      color: var(--muted);
-    }
-
-    /* =========================================================
-       TRANSFORMATION
-       ========================================================= */
-
-    .transformation {
-      background:
-        linear-gradient(135deg, #f0edff 0%, #fff6f9 100%);
-    }
-
-    .before-after {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .ba-card {
-      padding: 35px;
-      border-radius: 25px;
-      background: white;
-      box-shadow: var(--shadow);
-    }
-
-    .ba-card.before {
-      border-top: 7px solid #b7b3c3;
-    }
-
-    .ba-card.after {
-      border-top: 7px solid var(--green);
-    }
-
-    .ba-card h3 {
-      font-size: 30px;
-      margin-bottom: 18px;
-    }
-
-    .ba-card ul {
-      list-style: none;
-    }
-
-    .ba-card li {
-      margin: 13px 0;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
-
-    .before li::before {
-      content: "✕";
-      color: #9a94a7;
-      font-weight: 900;
-    }
-
-    .after li::before {
-      content: "✓";
-      color: var(--green);
-      font-weight: 900;
-    }
-
-    /* =========================================================
-       BENEFITS
-       ========================================================= */
-
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 20px;
-    }
-
-    .benefit {
-      display: flex;
-      gap: 18px;
-      padding: 25px;
-      background: white;
-      border-radius: 20px;
-      border: 1px solid rgba(0,0,0,.05);
-      transition: .3s ease;
-    }
-
-    .benefit:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow);
-    }
-
-    .benefit-icon {
-      min-width: 52px;
-      height: 52px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: #eeeaff;
-      font-size: 25px;
-    }
-
-    .benefit h3 {
-      font-size: 23px;
-      margin-bottom: 5px;
-    }
-
-    .benefit p {
-      color: var(--muted);
-    }
-
-    /* =========================================================
-       WHAT'S INSIDE
-       ========================================================= */
-
-    .inside {
-      background: var(--dark);
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .inside .section-heading h2 {
-      color: white;
-    }
-
-    .inside .section-heading p {
-      color: rgba(255,255,255,.72);
-    }
-
-    .inside-grid {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 20px;
-    }
-
-    .inside-card {
-      padding: 30px;
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: 22px;
-      background: rgba(255,255,255,.055);
-      backdrop-filter: blur(8px);
-      transition: .3s ease;
-    }
-
-    .inside-card:hover {
-      transform: translateY(-7px);
-      background: rgba(255,255,255,.09);
-    }
-
-    .inside-number {
-      width: 45px;
-      height: 45px;
-      display: grid;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--yellow);
-      color: var(--dark);
-      font-weight: 900;
-      margin-bottom: 20px;
-    }
-
-    .inside-card h3 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
-    .inside-card p {
-      color: rgba(255,255,255,.68);
-    }
-
-    /* =========================================================
-       BIG CTA
-       ========================================================= */
-
-    .final-cta {
-      padding: 100px 0;
-      background:
-        radial-gradient(circle at 10% 30%, rgba(255,216,77,.30), transparent 22%),
-        radial-gradient(circle at 90% 70%, rgba(255,93,143,.22), transparent 25%),
-        #eeeaff;
-    }
-
-    .cta-box {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      background: white;
-      padding: 60px 35px;
-      border-radius: 32px;
-      box-shadow: var(--shadow);
-    }
-
-    .cta-box .emoji {
-      font-size: 54px;
-      margin-bottom: 10px;
-      display: block;
-      animation: bounce 2s ease-in-out infinite;
-    }
-
-    @keyframes bounce {
-      0%,100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-8px);
-      }
-    }
-
-    .cta-box h2 {
-      font-size: clamp(40px,5vw,58px);
-      line-height: 1;
-      color: var(--dark);
-      margin-bottom: 18px;
-    }
-
-    .cta-box p {
-      max-width: 650px;
-      margin: 0 auto 28px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .cta-large {
-      padding: 19px 38px;
-      font-size: 20px;
-    }
-
-    /* =========================================================
-       FAQ
-       ========================================================= */
-
-    .faq {
-      background: white;
-    }
-
-    .faq-list {
-      max-width: 800px;
-      margin: auto;
-    }
-
-    details {
-      border-bottom: 1px solid #e8e5ed;
-      padding: 20px 0;
-    }
-
-    summary {
-      cursor: pointer;
-      list-style: none;
-      font-size: 19px;
-      font-weight: 900;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    summary::-webkit-details-marker {
-      display: none;
-    }
-
-    summary::after {
-      content: "+";
-      color: var(--purple);
-      font-size: 25px;
-    }
-
-    details[open] summary::after {
-      content: "−";
-    }
-
-    details p {
-      color: var(--muted);
-      margin-top: 12px;
-      max-width: 700px;
-    }
-
-    /* =========================================================
-       FOOTER
-       ========================================================= */
-
-    footer {
-      background: var(--dark);
-      color: white;
-      padding: 35px 0 100px;
-      text-align: center;
-    }
-
-    footer .logo {
-      color: white;
-      margin-bottom: 8px;
-    }
-
-    footer p {
-      color: rgba(255,255,255,.55);
-      font-size: 13px;
-    }
-
-    /* =========================================================
-       MOBILE STICKY CTA
-       ========================================================= */
-
-    .mobile-cta {
-      display: none;
-      position: fixed;
-      z-index: 100;
-      left: 12px;
-      right: 12px;
-      bottom: 12px;
-      background: rgba(23,21,43,.94);
-      backdrop-filter: blur(12px);
-      padding: 10px;
-      border-radius: 18px;
-      box-shadow: 0 15px 40px rgba(0,0,0,.25);
-    }
-
-    .mobile-cta a {
-      width: 100%;
-      text-align: center;
-      padding: 13px;
-      display: block;
-      background: var(--purple);
-      color: white;
-      border-radius: 12px;
-      font-weight: 900;
-    }
-
-    /* =========================================================
-       ANIMATION ON SCROLL
-       ========================================================= */
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(25px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    /* =========================================================
-       RESPONSIVE
-       ========================================================= */
-
-    @media (max-width: 900px) {
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-      }
-
-      .hero-text {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .cta-wrapper {
-        justify-content: center;
-      }
-
-      .book-area {
-        min-height: 470px;
-      }
-
-      .problem-grid,
-      .inside-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .benefits-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .before-after {
-        grid-template-columns: 1fr;
-      }
-
-      .floating-card.card-1 {
-        right: 5%;
-      }
-
-      .floating-card.card-3 {
-        left: 5%;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .container {
-        width: min(100% - 28px, 1120px);
-      }
-
-      .topbar {
-        font-size: 12px;
-      }
-
-      .nav-inner {
-        min-height: 62px;
-      }
-
-      .logo {
-        font-size: 20px;
-      }
-
-      .nav-cta {
-        padding: 8px 14px;
-        font-size: 13px;
-      }
-
-      .hero {
-        padding: 55px 0 70px;
-      }
-
-      .hero h1 {
-        font-size: 47px;
-      }
-
-      .hero-text {
-        font-size: 17px;
-      }
-
-      .book-area {
-        min-height: 420px;
-      }
-
-      .book {
-        width: 245px;
-        min-height: 350px;
-      }
-
-      .book h2 {
-        font-size: 35px;
-      }
-
-      .floating-card {
-        font-size: 12px;
-        padding: 9px 12px;
-      }
-
-      section.content-section {
-        padding: 70px 0;
-      }
-
-      .section-heading {
-        margin-bottom: 35px;
-      }
-
-      .section-heading h2 {
-        font-size: 40px;
-      }
-
-      .cta {
-        width: 100%;
-      }
-
-      .cta-subtext {
-        width: 100%;
-        text-align: center;
-      }
-
-      .cta-box {
-        padding: 45px 20px;
-      }
-
-      .mobile-cta {
-        display: block;
-      }
-
-      footer {
-        padding-bottom: 110px;
-      }
-    }
-
-  </style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Child Just Wants to Play All the Time | Turn Play Into Learning</title>
+
+<meta
+name="description"
+content="Turn play into learning without battles. Discover a calm, practical approach to making everyday learning more engaging for your child."
+>
+
+<meta name="robots" content="index, follow">
+
+<!-- =========================
+     SOCIAL SHARING
+========================= -->
+
+<meta property="og:title"
+content="My Child Just Wants to Play All the Time">
+
+<meta property="og:description"
+content="What if your child's love of play could become part of the learning journey?">
+
+<meta property="og:type" content="website">
+
+
+<!-- =========================
+     META PIXEL
+     ID: 2032621154052189
+========================= -->
+
+<script>
+
+!function(f,b,e,v,n,t,s)
+{
+if(f.fbq)return;
+
+n=f.fbq=function()
+{
+n.callMethod ?
+n.callMethod.apply(n,arguments) :
+n.queue.push(arguments)
+};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)
+
+}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','2032621154052189');
+
+fbq('track','PageView');
+
+fbq('track','ViewContent');
+
+</script>
+
+
+<noscript>
+
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=2032621154052189&ev=PageView&noscript=1"
+alt=""
+>
+
+</noscript>
+
+
+<!-- =========================
+     FONTS
+========================= -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap"
+rel="stylesheet"
+>
+
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root{
+
+--navy:#132a55;
+
+--blue:#1769d2;
+
+--sky:#eaf5ff;
+
+--yellow:#ffd447;
+
+--orange:#ff8b22;
+
+--red:#f4435c;
+
+--pink:#ff4f86;
+
+--green:#37b878;
+
+--purple:#7656e8;
+
+--cream:#fffaf3;
+
+--white:#ffffff;
+
+--text:#24324a;
+
+--muted:#667085;
+
+--border:#e8edf4;
+
+--shadow:
+0 20px 60px rgba(20,45,90,.12);
+
+--shadow-big:
+0 30px 80px rgba(20,45,90,.20);
+
+--radius:28px;
+
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:
+"Nunito",
+Arial,
+sans-serif;
+
+color:var(--text);
+
+background:var(--cream);
+
+line-height:1.6;
+
+overflow-x:hidden;
+
+}
+
+h1,h2,h3,h4{
+
+font-family:
+"Baloo 2",
+cursive;
+
+color:var(--navy);
+
+}
+
+a{
+text-decoration:none;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+.container{
+
+width:min(1160px,calc(100% - 36px));
+
+margin:auto;
+
+}
+
+
+/* =========================================================
+   TOP ANNOUNCEMENT
+========================================================= */
+
+.top-strip{
+
+background:var(--navy);
+
+color:white;
+
+text-align:center;
+
+font-weight:800;
+
+font-size:14px;
+
+padding:10px 15px;
+
+}
+
+.top-strip span{
+
+color:var(--yellow);
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.nav{
+
+background:
+rgba(255,250,243,.92);
+
+backdrop-filter:blur(14px);
+
+border-bottom:1px solid rgba(0,0,0,.05);
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+}
+
+.nav-inner{
+
+min-height:72px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:20px;
+
+}
+
+.logo{
+
+font-family:"Baloo 2",cursive;
+
+font-size:25px;
+
+font-weight:800;
+
+color:var(--navy);
+
+}
+
+.logo span{
+
+color:var(--pink);
+
+}
+
+.nav-button{
+
+background:var(--blue);
+
+color:white;
+
+font-weight:900;
+
+padding:11px 22px;
+
+border-radius:999px;
+
+box-shadow:
+0 8px 20px rgba(23,105,210,.20);
+
+transition:.25s;
+
+}
+
+.nav-button:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 14px 30px rgba(23,105,210,.30);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+position:relative;
+
+padding:55px 0 80px;
+
+background:
+
+radial-gradient(
+circle at 10% 10%,
+rgba(255,212,71,.22),
+transparent 25%
+),
+
+radial-gradient(
+circle at 90% 20%,
+rgba(118,86,232,.13),
+transparent 25%
+),
+
+var(--cream);
+
+overflow:hidden;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+.92fr
+1.08fr;
+
+gap:55px;
+
+align-items:center;
+
+}
+
+
+/* LEFT SIDE */
+
+.hero-copy{
+
+animation:
+heroIn .8s ease both;
+
+}
+
+@keyframes heroIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+background:#fff2c6;
+
+color:#5c4910;
+
+padding:9px 17px;
+
+border-radius:999px;
+
+font-weight:900;
+
+font-size:13px;
+
+margin-bottom:18px;
+
+}
+
+.hero h1{
+
+font-size:
+clamp(48px,6vw,76px);
+
+line-height:.94;
+
+letter-spacing:-1px;
+
+margin-bottom:22px;
+
+}
+
+.hero h1 .play{
+
+color:var(--red);
+
+position:relative;
+
+}
+
+.hero h1 .play:after{
+
+content:"";
+
+position:absolute;
+
+height:8px;
+
+background:var(--yellow);
+
+left:2px;
+
+right:2px;
+
+bottom:-2px;
+
+border-radius:20px;
+
+z-index:-1;
+
+}
+
+.hero-lead{
+
+font-size:19px;
+
+color:var(--muted);
+
+margin-bottom:16px;
+
+max-width:620px;
+
+}
+
+.hero-lead strong{
+
+color:var(--navy);
+
+}
+
+
+/* EMOTIONAL COPY */
+
+.emotional-line{
+
+font-family:"Baloo 2",cursive;
+
+font-size:24px;
+
+font-weight:700;
+
+color:var(--pink);
+
+margin-bottom:25px;
+
+}
+
+
+/* CTA */
+
+.cta-row{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-cta{
+
+position:relative;
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+background:
+
+linear-gradient(
+135deg,
+#ff3f67,
+#ff6b3d
+);
+
+color:white;
+
+font-size:19px;
+
+font-weight:900;
+
+padding:17px 30px;
+
+border-radius:16px;
+
+box-shadow:
+0 15px 30px rgba(244,67,92,.28);
+
+transition:
+transform .25s,
+box-shadow .25s;
+
+overflow:hidden;
+
+}
+
+.primary-cta:before{
+
+content:"";
+
+position:absolute;
+
+width:70px;
+
+height:150%;
+
+background:
+rgba(255,255,255,.28);
+
+transform:
+rotate(20deg);
+
+left:-100px;
+
+top:-25px;
+
+animation:
+shine 3.5s infinite;
+
+}
+
+@keyframes shine{
+
+0%,60%{
+left:-120px;
+}
+
+100%{
+left:130%;
+}
+
+}
+
+.primary-cta:hover{
+
+transform:
+translateY(-4px)
+scale(1.02);
+
+box-shadow:
+0 22px 45px rgba(244,67,92,.35);
+
+}
+
+.cta-note{
+
+font-size:12px;
+
+font-weight:800;
+
+color:var(--muted);
+
+margin-top:10px;
+
+}
+
+
+/* =========================================================
+   HERO PRODUCT IMAGE
+========================================================= */
+
+.hero-visual{
+
+position:relative;
+
+animation:
+visualIn 1s .15s ease both;
+
+}
+
+@keyframes visualIn{
+
+from{
+
+opacity:0;
+
+transform:
+translateX(40px)
+scale(.95);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateX(0)
+scale(1);
+
+}
+
+}
+
+.hero-product{
+
+width:100%;
+
+border-radius:26px;
+
+box-shadow:
+var(--shadow-big);
+
+transition:
+transform .5s ease;
+
+}
+
+.hero-product:hover{
+
+transform:
+translateY(-8px)
+rotate(.3deg);
+
+}
+
+
+/* FLOATING BADGES */
+
+.float-badge{
+
+position:absolute;
+
+background:white;
+
+padding:13px 17px;
+
+border-radius:16px;
+
+box-shadow:var(--shadow);
+
+font-weight:900;
+
+font-size:13px;
+
+z-index:3;
+
+animation:
+float 4s ease-in-out infinite;
+
+}
+
+.float-one{
+
+top:8%;
+
+left:-25px;
+
+color:var(--green);
+
+}
+
+.float-two{
+
+bottom:12%;
+
+right:-22px;
+
+color:var(--purple);
+
+animation-delay:1s;
+
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+
+/* =========================================================
+   TRUST BAR
+========================================================= */
+
+.trust{
+
+background:white;
+
+border-top:1px solid var(--border);
+
+border-bottom:1px solid var(--border);
+
+padding:24px 0;
+
+}
+
+.trust-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.trust-item{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+font-weight:900;
+
+font-size:14px;
+
+color:var(--navy);
+
+text-align:center;
+
+}
+
+.trust-icon{
+
+font-size:25px;
+
+}
+
+
+/* =========================================================
+   SECTION COMMON
+========================================================= */
+
+.section{
+
+padding:95px 0;
+
+}
+
+.section-header{
+
+max-width:760px;
+
+margin:
+0 auto 55px;
+
+text-align:center;
+
+}
+
+.section-kicker{
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+font-size:13px;
+
+font-weight:900;
+
+color:var(--blue);
+
+margin-bottom:10px;
+
+}
+
+.section-header h2{
+
+font-size:
+clamp(40px,5vw,58px);
+
+line-height:1;
+
+margin-bottom:17px;
+
+}
+
+.section-header p{
+
+font-size:18px;
+
+color:var(--muted);
+
+}
+
+
+/* =========================================================
+   PROBLEM SECTION
+========================================================= */
+
+.problem{
+
+background:white;
+
+}
+
+.problem-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:24px;
+
+}
+
+.problem-card{
+
+padding:34px 28px;
+
+border:
+
+1px solid var(--border);
+
+border-radius:var(--radius);
+
+background:#fff;
+
+transition:.3s;
+
+}
+
+.problem-card:hover{
+
+transform:
+translateY(-7px);
+
+box-shadow:var(--shadow);
+
+}
+
+.problem-icon{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+.problem-card h3{
+
+font-size:27px;
+
+margin-bottom:8px;
+
+}
+
+.problem-card p{
+
+color:var(--muted);
+
+}
+
+
+/* =========================================================
+   EMOTIONAL SECTION
+========================================================= */
+
+.emotional{
+
+background:
+
+linear-gradient(
+135deg,
+#eef7ff,
+#fff1f6
+);
+
+}
+
+.emotional-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr
+1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.emotional-image{
+
+border-radius:30px;
+
+box-shadow:var(--shadow-big);
+
+}
+
+.emotional-copy h2{
+
+font-size:
+clamp(40px,5vw,58px);
+
+line-height:1;
+
+margin-bottom:20px;
+
+}
+
+.emotional-copy h2 span{
+
+color:var(--pink);
+
+}
+
+.emotional-copy p{
+
+font-size:18px;
+
+color:var(--muted);
+
+margin-bottom:20px;
+
+}
+
+.quote{
+
+background:white;
+
+padding:22px 25px;
+
+border-left:
+6px solid var(--yellow);
+
+border-radius:0 18px 18px 0;
+
+box-shadow:var(--shadow);
+
+font-family:"Baloo 2",cursive;
+
+font-size:22px;
+
+font-weight:700;
+
+color:var(--navy);
+
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.benefit-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.benefit{
+
+display:flex;
+
+gap:18px;
+
+padding:25px;
+
+background:white;
+
+border:1px solid var(--border);
+
+border-radius:22px;
+
+transition:.3s;
+
+}
+
+.benefit:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:var(--shadow);
+
+}
+
+.benefit-icon{
+
+width:55px;
+
+height:55px;
+
+min-width:55px;
+
+display:grid;
+
+place-items:center;
+
+background:#edf5ff;
+
+border-radius:16px;
+
+font-size:27px;
+
+}
+
+.benefit h3{
+
+font-size:24px;
+
+margin-bottom:5px;
+
+}
+
+.benefit p{
+
+color:var(--muted);
+
+}
+
+
+/* =========================================================
+   BOOK SECTION
+========================================================= */
+
+.book-section{
+
+background:var(--navy);
+
+color:white;
+
+overflow:hidden;
+
+}
+
+.book-section h2{
+
+color:white;
+
+}
+
+.book-section .section-kicker{
+
+color:var(--yellow);
+
+}
+
+.book-section .section-header p{
+
+color:rgba(255,255,255,.7);
+
+}
+
+.book-grid{
+
+display:grid;
+
+grid-template-columns:
+.85fr
+1.15fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.cover-wrap{
+
+position:relative;
+
+max-width:450px;
+
+margin:auto;
+
+}
+
+.cover{
+
+border-radius:8px;
+
+box-shadow:
+-20px 25px 0 rgba(0,0,0,.15),
+0 35px 60px rgba(0,0,0,.35);
+
+transition:.5s;
+
+}
+
+.cover:hover{
+
+transform:
+rotate(-2deg)
+translateY(-8px);
+
+}
+
+.cover-tag{
+
+position:absolute;
+
+right:-25px;
+
+top:30px;
+
+background:var(--yellow);
+
+color:var(--navy);
+
+padding:12px 17px;
+
+border-radius:12px;
+
+font-weight:900;
+
+box-shadow:var(--shadow);
+
+transform:rotate(4deg);
+
+}
+
+.book-points{
+
+display:grid;
+
+gap:20px;
+
+}
+
+.book-point{
+
+display:flex;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+.check{
+
+width:36px;
+
+height:36px;
+
+min-width:36px;
+
+display:grid;
+
+place-items:center;
+
+background:var(--green);
+
+border-radius:50%;
+
+font-weight:900;
+
+}
+
+.book-point h3{
+
+color:white;
+
+font-size:24px;
+
+margin-bottom:3px;
+
+}
+
+.book-point p{
+
+color:rgba(255,255,255,.68);
+
+}
+
+
+/* =========================================================
+   TRANSFORMATION
+========================================================= */
+
+.transformation{
+
+background:var(--cream);
+
+}
+
+.transform-grid{
+
+display:grid;
+
+grid-template-columns:
+1fr
+1fr;
+
+gap:24px;
+
+}
+
+.transform-card{
+
+padding:35px;
+
+border-radius:28px;
+
+background:white;
+
+box-shadow:var(--shadow);
+
+}
+
+.transform-card h3{
+
+font-size:32px;
+
+margin-bottom:18px;
+
+}
+
+.transform-card ul{
+
+list-style:none;
+
+}
+
+.transform-card li{
+
+padding:12px 0;
+
+display:flex;
+
+gap:10px;
+
+border-bottom:1px solid var(--border);
+
+}
+
+.transform-card li:last-child{
+
+border-bottom:0;
+
+}
+
+.before h3{
+
+color:#7c8494;
+
+}
+
+.before li:before{
+
+content:"✕";
+
+color:#a4a9b2;
+
+font-weight:900;
+
+}
+
+.after{
+
+border-top:
+6px solid var(--green);
+
+}
+
+.after h3{
+
+color:var(--green);
+
+}
+
+.after li:before{
+
+content:"✓";
+
+color:var(--green);
+
+font-weight:900;
+
+}
+
+
+/* =========================================================
+   MOCKUP CTA SECTION
+========================================================= */
+
+.mockup-section{
+
+padding:100px 0;
+
+background:
+
+radial-gradient(
+circle at 15% 20%,
+rgba(255,212,71,.25),
+transparent 25%
+),
+
+radial-gradient(
+circle at 85% 80%,
+rgba(255,79,134,.16),
+transparent 30%
+),
+
+#f3f7fc;
+
+}
+
+.mockup-grid{
+
+display:grid;
+
+grid-template-columns:
+1.1fr
+.9fr;
+
+gap:65px;
+
+align-items:center;
+
+}
+
+.mockup{
+
+border-radius:22px;
+
+box-shadow:var(--shadow-big);
+
+transition:.5s;
+
+}
+
+.mockup:hover{
+
+transform:
+translateY(-10px)
+rotate(-1deg);
+
+}
+
+.mockup-copy h2{
+
+font-size:
+clamp(40px,5vw,60px);
+
+line-height:.98;
+
+margin-bottom:18px;
+
+}
+
+.mockup-copy h2 span{
+
+color:var(--pink);
+
+}
+
+.mockup-copy p{
+
+font-size:18px;
+
+color:var(--muted);
+
+margin-bottom:24px;
+
+}
+
+.small-list{
+
+display:grid;
+
+gap:10px;
+
+margin-bottom:28px;
+
+}
+
+.small-list div{
+
+font-weight:800;
+
+}
+
+.small-list span{
+
+color:var(--green);
+
+margin-right:7px;
+
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.final-cta{
+
+padding:105px 0;
+
+background:
+
+linear-gradient(
+135deg,
+#fff1f5,
+#fff8df
+);
+
+}
+
+.final-box{
+
+max-width:900px;
+
+margin:auto;
+
+background:white;
+
+border-radius:35px;
+
+padding:65px 35px;
+
+text-align:center;
+
+box-shadow:var(--shadow-big);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.final-box:before{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:
+rgba(255,212,71,.18);
+
+top:-110px;
+
+left:-110px;
+
+}
+
+.final-box:after{
+
+content:"";
+
+position:absolute;
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+background:
+rgba(255,79,134,.12);
+
+bottom:-110px;
+
+right:-110px;
+
+}
+
+.final-emoji{
+
+font-size:50px;
+
+margin-bottom:5px;
+
+}
+
+.final-box h2{
+
+font-size:
+clamp(42px,5vw,62px);
+
+line-height:.98;
+
+margin-bottom:18px;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.final-box p{
+
+max-width:680px;
+
+margin:
+0 auto 28px;
+
+font-size:18px;
+
+color:var(--muted);
+
+position:relative;
+
+z-index:2;
+
+}
+
+.final-box .primary-cta{
+
+position:relative;
+
+z-index:3;
+
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq{
+
+background:white;
+
+}
+
+.faq-list{
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+details{
+
+border-bottom:
+1px solid var(--border);
+
+padding:20px 0;
+
+}
+
+summary{
+
+cursor:pointer;
+
+font-size:19px;
+
+font-weight:900;
+
+color:var(--navy);
+
+display:flex;
+
+justify-content:space-between;
+
+gap:20px;
+
+list-style:none;
+
+}
+
+summary::-webkit-details-marker{
+display:none;
+}
+
+summary:after{
+
+content:"+";
+
+font-size:25px;
+
+color:var(--blue);
+
+}
+
+details[open] summary:after{
+
+content:"−";
+
+}
+
+details p{
+
+margin-top:12px;
+
+color:var(--muted);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+background:var(--navy);
+
+color:white;
+
+text-align:center;
+
+padding:35px 0 50px;
+
+}
+
+footer .logo{
+
+color:white;
+
+margin-bottom:7px;
+
+}
+
+footer p{
+
+color:rgba(255,255,255,.55);
+
+font-size:13px;
+
+}
+
+
+/* =========================================================
+   MOBILE CTA
+========================================================= */
+
+.mobile-cta{
+
+display:none;
+
+position:fixed;
+
+left:12px;
+
+right:12px;
+
+bottom:12px;
+
+z-index:999;
+
+background:
+rgba(19,42,85,.96);
+
+padding:9px;
+
+border-radius:16px;
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.25);
+
+}
+
+.mobile-cta a{
+
+display:block;
+
+text-align:center;
+
+background:
+
+linear-gradient(
+135deg,
+#ff3f67,
+#ff6b3d
+);
+
+color:white;
+
+font-weight:900;
+
+padding:13px;
+
+border-radius:11px;
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(28px);
+
+transition:
+opacity .7s ease,
+transform .7s ease;
+
+}
+
+.reveal.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:950px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-copy{
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+.hero-lead{
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+.cta-row{
+
+justify-content:center;
+
+}
+
+.hero-visual{
+
+max-width:760px;
+
+margin:auto;
+
+}
+
+.trust-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.problem-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.emotional-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.emotional-copy{
+
+text-align:center;
+
+}
+
+.book-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.book-points{
+
+max-width:650px;
+
+margin:auto;
+
+}
+
+.mockup-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.mockup-copy{
+
+text-align:center;
+
+order:-1;
+
+}
+
+.small-list{
+
+max-width:500px;
+
+margin:
+0 auto 28px;
+
+text-align:left;
+
+}
+
+.transform-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+@media(max-width:600px){
+
+.container{
+
+width:
+calc(100% - 26px);
+
+}
+
+.top-strip{
+
+font-size:12px;
+
+}
+
+.nav-inner{
+
+min-height:62px;
+
+}
+
+.logo{
+
+font-size:21px;
+
+}
+
+.nav-button{
+
+font-size:13px;
+
+padding:9px 15px;
+
+}
+
+.hero{
+
+padding:
+45px 0 60px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero-lead{
+
+font-size:17px;
+
+}
+
+.emotional-line{
+
+font-size:21px;
+
+}
+
+.primary-cta{
+
+width:100%;
+
+font-size:17px;
+
+}
+
+.float-badge{
+
+font-size:11px;
+
+padding:9px 11px;
+
+}
+
+.float-one{
+
+left:-4px;
+
+}
+
+.float-two{
+
+right:-4px;
+
+}
+
+.trust-grid{
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+.trust-item{
+
+font-size:12px;
+
+flex-direction:column;
+
+gap:2px;
+
+}
+
+.section{
+
+padding:70px 0;
+
+}
+
+.section-header{
+
+margin-bottom:38px;
+
+}
+
+.section-header h2{
+
+font-size:40px;
+
+}
+
+.section-header p{
+
+font-size:16px;
+
+}
+
+.emotional-copy h2{
+
+font-size:42px;
+
+}
+
+.benefit-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.benefit{
+
+padding:20px;
+
+}
+
+.book-section{
+
+padding:75px 0;
+
+}
+
+.cover-tag{
+
+right:-5px;
+
+font-size:12px;
+
+}
+
+.mockup-section{
+
+padding:75px 0;
+
+}
+
+.mockup-copy h2{
+
+font-size:43px;
+
+}
+
+.final-cta{
+
+padding:75px 0;
+
+}
+
+.final-box{
+
+padding:
+45px 20px;
+
+border-radius:25px;
+
+}
+
+.final-box h2{
+
+font-size:43px;
+
+}
+
+.mobile-cta{
+
+display:block;
+
+}
+
+footer{
+
+padding-bottom:95px;
+
+}
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+</style>
+
 </head>
 
 
 <body>
 
-  <!-- =========================================================
-       TOP BAR
-       ========================================================= -->
 
-  <div class="topbar">
-    🎮 What if <span>play</span> could become your child's secret learning advantage?
-  </div>
+<!-- =========================================================
+     TOP STRIP
+========================================================= -->
 
+<div class="top-strip">
 
-  <!-- =========================================================
-       NAVIGATION
-       ========================================================= -->
+🎮 Your child's love of <span>play</span> may be an opportunity — not a problem.
 
-  <nav>
-    <div class="container nav-inner">
+</div>
 
-      <div class="logo">
-        🎮 Play → Learn
-      </div>
 
-      <a
-        href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-        class="nav-cta buy-button"
-        target="_blank"
-        rel="noopener"
-      >
-        Get the eBook →
-      </a>
+<!-- =========================================================
+     NAV
+========================================================= -->
 
-    </div>
-  </nav>
+<nav class="nav">
 
+<div class="container nav-inner">
 
-  <!-- =========================================================
-       HERO
-       ========================================================= -->
+<div class="logo">
 
-  <header class="hero">
+Play <span>→</span> Learn
 
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+</div>
 
-    <div class="container hero-grid">
+<a
+href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
+class="nav-button buy-button"
+target="_blank"
+rel="noopener"
+>
 
-      <div>
+Get the eBook →
 
-        <div class="eyebrow">
-          🎯 For parents who hear "I want to play!" all the time
-        </div>
+</a>
 
-        <h1>
-          What if your child's
-          <span class="highlight">love of play</span>
-          could make learning easier?
-        </h1>
+</div>
 
-        <p class="hero-text">
-          <strong>My Child Just Wants to Play All the Time</strong>
-          explores a simple idea:
-          instead of fighting your child's desire to play,
-          <strong>use it.</strong>
-          Turn study time into something more engaging, interactive
-          and game-like.
-        </p>
+</nav>
 
-        <div class="cta-wrapper">
 
-          <a
-            href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-            class="cta buy-button"
-            target="_blank"
-            rel="noopener"
-          >
-            🎮 Get the eBook & Start Playing
-          </a>
 
-          <div class="cta-subtext">
-            Simple ideas for making learning feel less like a battle.
-          </div>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-        </div>
+<header class="hero">
 
-      </div>
+<div class="container hero-grid">
 
 
-      <!-- BOOK -->
+<div class="hero-copy">
 
-      <div class="book-area">
+<div class="badge">
 
-        <div class="book-glow"></div>
+❤️ For parents who hear "I want to play!" all the time
 
-        <div class="floating-card card-1">
-          ✓ Less resistance
-        </div>
+</div>
 
-        <div class="floating-card card-2">
-          🎯 Make learning a game
-        </div>
 
-        <div class="floating-card card-3">
-          🧠 Learn through play
-        </div>
+<h1>
 
-        <div class="book">
+What if you didn't have to fight your child's love of
 
-          <div class="book-kicker">
-            A practical parenting idea
-          </div>
+<span class="play">play?</span>
 
-          <h2>
-            My Child Just Wants to Play All the Time
-          </h2>
+</h1>
 
-          <div class="book-play">
-            🎮
-          </div>
 
-          <div class="book-bottom">
-            Discover how play can become part of the learning process.
-          </div>
+<p class="hero-lead">
 
-        </div>
+If your child would rather play than study, you may have
+found yourself asking:
 
-      </div>
+<strong>
+"How do I get my child to learn without turning every day into a battle?"
+</strong>
 
-    </div>
+</p>
 
-  </header>
 
+<div class="emotional-line">
 
-  <!-- =========================================================
-       TRUST STRIP
-       ========================================================= -->
+Maybe the answer isn't less play. Maybe it's better use of play.
 
-  <div class="trust">
+</div>
 
-    <div class="container trust-inner">
 
-      <div class="trust-item">
-        <span>🎮</span> Play-based ideas
-      </div>
+<div class="cta-row">
 
-      <div class="trust-item">
-        <span>🧠</span> Learning made engaging
-      </div>
+<a
+href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
+class="primary-cta buy-button"
+target="_blank"
+rel="noopener"
+>
 
-      <div class="trust-item">
-        <span>👨‍👩‍👧</span> Parent-friendly approach
-      </div>
+📖 Get the eBook & Start Reading →
 
-      <div class="trust-item">
-        <span>⚡</span> Practical & simple
-      </div>
+</a>
 
-    </div>
+</div>
 
-  </div>
 
+<div class="cta-note">
 
-  <!-- =========================================================
-       PROBLEM
-       ========================================================= -->
+Secure checkout through Gumroad • Read on your device
 
-  <section class="content-section problem">
+</div>
 
-    <div class="container">
+</div>
 
-      <div class="section-heading reveal">
 
-        <div class="section-label">
-          Sound familiar?
-        </div>
 
-        <h2>
-          When "Study Time" becomes a daily struggle
-        </h2>
+<!-- HERO PRODUCT -->
 
-        <p>
-          Sometimes the problem isn't that a child doesn't want to learn.
-          They may simply be much more attracted to the world of play.
-        </p>
+<div class="hero-visual">
 
-      </div>
+<div class="float-badge float-one">
 
+✓ Calm learning ideas
 
-      <div class="problem-grid">
+</div>
 
-        <div class="problem-card reveal">
+<div class="float-badge float-two">
 
-          <div class="problem-icon">
-            🎮
-          </div>
+🎮 Play → Learn
 
-          <h3>
-            "Can I play now?"
-          </h3>
+</div>
 
-          <p>
-            The moment study time begins, your child suddenly has
-            something much more exciting to do.
-          </p>
 
-        </div>
+<img
+src="my-child-wants-to-play-book-mockup.jpg"
+alt="My Child Just Wants to Play All the Time ebook physical book mockup"
+class="hero-product"
+loading="eager"
+>
 
+</div>
 
-        <div class="problem-card reveal">
 
-          <div class="problem-icon">
-            😩
-          </div>
+</div>
 
-          <h3>
-            Repeated reminders
-          </h3>
+</header>
 
-          <p>
-            You remind, explain, negotiate and remind again —
-            and it can become exhausting for everyone.
-          </p>
 
-        </div>
 
+<!-- =========================================================
+     TRUST
+========================================================= -->
 
-        <div class="problem-card reveal">
+<section class="trust">
 
-          <div class="problem-icon">
-            📚
-          </div>
+<div class="container trust-grid">
 
-          <h3>
-            Learning feels like work
-          </h3>
 
-          <p>
-            Worksheets and memorization can feel very different
-            from the excitement children experience while playing.
-          </p>
+<div class="trust-item">
 
-        </div>
+<div class="trust-icon">🎮</div>
 
-      </div>
+<div>Play-based ideas</div>
 
-    </div>
+</div>
 
-  </section>
 
+<div class="trust-item">
 
-  <!-- =========================================================
-       TRANSFORMATION
-       ========================================================= -->
+<div class="trust-icon">❤️</div>
 
-  <section class="content-section transformation">
+<div>Parent-child connection</div>
 
-    <div class="container">
+</div>
 
-      <div class="section-heading reveal">
 
-        <div class="section-label">
-          A different way to think about it
-        </div>
+<div class="trust-item">
 
-        <h2>
-          Don't always fight the play. Use it.
-        </h2>
+<div class="trust-icon">🧠</div>
 
-        <p>
-          The goal isn't to make every lesson a video game.
-          It's to borrow the elements that make games engaging
-          and bring some of them into learning.
-        </p>
+<div>Engaging learning</div>
 
-      </div>
+</div>
 
 
-      <div class="before-after">
+<div class="trust-item">
 
-        <div class="ba-card before reveal">
+<div class="trust-icon">📖</div>
 
-          <h3>
-            Before
-          </h3>
+<div>Practical ebook</div>
 
-          <ul>
+</div>
 
-            <li>
-              Study first, play later.
-            </li>
 
-            <li>
-              Repeated reminders to start.
-            </li>
+</div>
 
-            <li>
-              Learning feels like a chore.
-            </li>
+</section>
 
-            <li>
-              Parent and child can end up frustrated.
-            </li>
 
-          </ul>
 
-        </div>
+<!-- =========================================================
+     PROBLEM
+========================================================= -->
 
+<section class="section problem">
 
-        <div class="ba-card after reveal">
+<div class="container">
 
-          <h3>
-            After
-          </h3>
 
-          <ul>
+<div class="section-header reveal">
 
-            <li>
-              Turn small learning tasks into challenges.
-            </li>
+<div class="section-kicker">
 
-            <li>
-              Add goals, points, choices and rewards.
-            </li>
+THE DAILY STRUGGLE
 
-            <li>
-              Make progress visible and satisfying.
-            </li>
+</div>
 
-            <li>
-              Let curiosity and play become part of learning.
-            </li>
+<h2>
 
-          </ul>
+Does this sound familiar?
 
-        </div>
+</h2>
 
-      </div>
+<p>
 
-    </div>
+You want your child to learn. Your child wants to play.
+And sometimes those two things seem to be pulling in opposite directions.
 
-  </section>
+</p>
 
+</div>
 
-  <!-- =========================================================
-       BENEFITS
-       ========================================================= -->
 
-  <section class="content-section">
 
-    <div class="container">
+<div class="problem-grid">
 
-      <div class="section-heading reveal">
 
-        <div class="section-label">
-          What you can explore
-        </div>
+<div class="problem-card reveal">
 
-        <h2>
-          Turn "I want to play" into an opportunity
-        </h2>
+<div class="problem-icon">
 
-        <p>
-          Instead of seeing play and learning as two competing worlds,
-          explore ways to bring them closer together.
-        </p>
+🎮
 
-      </div>
+</div>
 
+<h3>
 
-      <div class="benefits-grid">
+"I want to play!"
 
-        <div class="benefit reveal">
+</h3>
 
-          <div class="benefit-icon">
-            🎯
-          </div>
+<p>
 
-          <div>
+Every time study time arrives, your child seems to find
+something much more exciting to do.
 
-            <h3>
-              Create small challenges
-            </h3>
+</p>
 
-            <p>
-              Break learning into manageable missions that feel
-              achievable and rewarding.
-            </p>
+</div>
 
-          </div>
 
-        </div>
 
+<div class="problem-card reveal">
 
-        <div class="benefit reveal">
+<div class="problem-icon">
 
-          <div class="benefit-icon">
-            🏆
-          </div>
+😩
 
-          <div>
+</div>
 
-            <h3>
-              Add game-like rewards
-            </h3>
+<h3>
 
-            <p>
-              Use progress, points, levels or simple rewards to
-              make effort feel visible.
-            </p>
+The repeated reminders
 
-          </div>
+</h3>
 
-        </div>
+<p>
 
+"Come and study."
 
-        <div class="benefit reveal">
+"Just five minutes."
 
-          <div class="benefit-icon">
-            🧩
-          </div>
+"Please finish this."
 
-          <div>
+The same conversation can happen again and again.
 
-            <h3>
-              Make practice interactive
-            </h3>
+</p>
 
-            <p>
-              Transform passive practice into activities where your
-              child gets to participate.
-            </p>
+</div>
 
-          </div>
 
-        </div>
 
+<div class="problem-card reveal">
 
-        <div class="benefit reveal">
+<div class="problem-icon">
 
-          <div class="benefit-icon">
-            💡
-          </div>
+💔
 
-          <div>
+</div>
 
-            <h3>
-              Encourage curiosity
-            </h3>
+<h3>
 
-            <p>
-              Let questions, exploration and experimentation become
-              part of the learning experience.
-            </p>
+Nobody wants the battle
 
-          </div>
+</h3>
 
-        </div>
+<p>
 
+You don't want your child to hate learning.
+And you don't want every learning moment to end in frustration.
 
-        <div class="benefit reveal">
+</p>
 
-          <div class="benefit-icon">
-            ❤️
-          </div>
+</div>
 
-          <div>
 
-            <h3>
-              Reduce the daily battle
-            </h3>
+</div>
 
-            <p>
-              Create a learning environment that feels more inviting
-              and less like a constant confrontation.
-            </p>
+</div>
 
-          </div>
+</section>
 
-        </div>
 
 
-        <div class="benefit reveal">
+<!-- =========================================================
+     EMOTIONAL SECTION
+========================================================= -->
 
-          <div class="benefit-icon">
-            🚀
-          </div>
+<section class="section emotional">
 
-          <div>
+<div class="container emotional-grid">
 
-            <h3>
-              Make progress exciting
-            </h3>
 
-            <p>
-              Give your child a reason to feel proud about completing
-              the next learning challenge.
-            </p>
+<div class="reveal">
 
-          </div>
+<img
+src="parent-child-playing-learning.jpg.png"
+alt="Parent and child learning together through play"
+class="emotional-image"
+loading="lazy"
+>
 
-        </div>
+</div>
 
-      </div>
 
-    </div>
+<div class="emotional-copy reveal">
 
-  </section>
+<div class="section-kicker">
 
+A DIFFERENT WAY TO LOOK AT IT
 
-  <!-- =========================================================
-       INSIDE THE BOOK
-       ========================================================= -->
+</div>
 
-  <section class="content-section inside">
+<h2>
 
-    <div class="container">
+Your child's love of play may be a
 
-      <div class="section-heading reveal">
+<span>clue.</span>
 
-        <div class="section-label" style="color:#ffd84d;">
-          Inside the ebook
-        </div>
+</h2>
 
-        <h2>
-          A simple shift in the way you look at learning
-        </h2>
 
-        <p>
-          The ebook focuses on the idea of turning the natural attraction
-          children have toward play into something useful for learning.
-        </p>
+<p>
 
-      </div>
+Children naturally become absorbed when something feels
+interesting, active and enjoyable.
 
+</p>
 
-      <div class="inside-grid">
 
-        <div class="inside-card reveal">
+<p>
 
-          <div class="inside-number">
-            1
-          </div>
+Instead of seeing play and learning as enemies, this ebook
+explores how play can become part of the learning experience.
 
-          <h3>
-            Understand the attraction to play
-          </h3>
+</p>
 
-          <p>
-            Look at why play can be so much more attractive than
-            traditional study.
-          </p>
 
-        </div>
+<div class="quote">
 
+"Maybe you don't need to take play away. Maybe you can bring learning into it."
 
-        <div class="inside-card reveal">
+</div>
 
-          <div class="inside-number">
-            2
-          </div>
+</div>
 
-          <h3>
-            Reimagine study time
-          </h3>
 
-          <p>
-            Explore how familiar game elements can be adapted
-            to learning activities.
-          </p>
+</div>
 
-        </div>
+</section>
 
 
-        <div class="inside-card reveal">
 
-          <div class="inside-number">
-            3
-          </div>
+<!-- =========================================================
+     BENEFITS
+========================================================= -->
 
-          <h3>
-            Start with small changes
-          </h3>
+<section class="section">
 
-          <p>
-            You don't need to completely redesign your child's
-            education. Small changes can be a useful starting point.
-          </p>
+<div class="container">
 
-        </div>
 
-      </div>
+<div class="section-header reveal">
 
-    </div>
+<div class="section-kicker">
 
-  </section>
+WHAT YOU CAN EXPLORE
 
+</div>
 
-  <!-- =========================================================
-       MID-PAGE CTA
-       ========================================================= -->
+<h2>
 
-  <section class="final-cta">
+Turn everyday play into learning opportunities
 
-    <div class="container">
+</h2>
 
-      <div class="cta-box reveal">
+<p>
 
-        <span class="emoji">
-          🎮
-        </span>
+Simple ideas can change the way a child experiences
+practice, curiosity and progress.
 
-        <h2>
-          Ready to look at study time differently?
-        </h2>
+</p>
 
-        <p>
-          If your child would rather play than sit down and study,
-          maybe the answer isn't simply "less play."
-          Maybe some of that play can become part of the learning.
-        </p>
+</div>
 
-        <a
-          href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-          class="cta cta-large buy-button"
-          target="_blank"
-          rel="noopener"
-        >
-          📖 Get My Child Just Wants to Play All the Time
-        </a>
 
-        <p style="font-size:13px; margin-top:14px; margin-bottom:0;">
-          You'll be taken to Gumroad to complete your purchase.
-        </p>
 
-      </div>
+<div class="benefit-grid">
 
-    </div>
 
-  </section>
+<div class="benefit reveal">
 
+<div class="benefit-icon">🎯</div>
 
-  <!-- =========================================================
-       FAQ
-       ========================================================= -->
+<div>
 
-  <section class="content-section faq">
+<h3>
 
-    <div class="container">
+Create small challenges
 
-      <div class="section-heading reveal">
+</h3>
 
-        <div class="section-label">
-          Questions
-        </div>
+<p>
 
-        <h2>
-          Before you get started
-        </h2>
+Turn a big learning task into smaller, achievable
+missions that feel easier to begin.
 
-      </div>
+</p>
 
+</div>
 
-      <div class="faq-list">
+</div>
 
-        <details class="reveal">
 
-          <summary>
-            Is this about stopping children from playing?
-          </summary>
 
-          <p>
-            No. The central idea is to explore how a child's natural
-            interest in play can be used as part of a more engaging
-            learning experience.
-          </p>
+<div class="benefit reveal">
 
-        </details>
+<div class="benefit-icon">🏆</div>
 
+<div>
 
-        <details class="reveal">
+<h3>
 
-          <summary>
-            Do I need special apps or expensive equipment?
-          </summary>
+Make progress visible
 
-          <p>
-            The approach is designed around simple ideas and does not
-            depend on expensive equipment or complicated technology.
-          </p>
+</h3>
 
-        </details>
+<p>
 
+Use simple goals, progress and rewards to give children
+a reason to feel proud of their effort.
 
-        <details class="reveal">
+</p>
 
-          <summary>
-            Is this suitable for every child?
-          </summary>
+</div>
 
-          <p>
-            Every child is different. The ideas are intended as practical
-            possibilities that parents can adapt to their child's interests,
-            age and learning situation.
-          </p>
+</div>
 
-        </details>
 
 
-        <details class="reveal">
+<div class="benefit reveal">
 
-          <summary>
-            Where do I purchase the ebook?
-          </summary>
+<div class="benefit-icon">🧩</div>
 
-          <p>
-            The purchase is handled securely through Gumroad.
-            Click any "Get the eBook" button on this page to continue.
-          </p>
+<div>
 
-        </details>
+<h3>
 
-      </div>
+Make learning interactive
 
-    </div>
+</h3>
 
-  </section>
+<p>
 
+Move beyond simply sitting and memorizing by bringing
+activity and participation into learning.
 
-  <!-- =========================================================
-       FINAL CTA
-       ========================================================= -->
+</p>
 
-  <section class="final-cta" style="padding-top:20px;">
+</div>
 
-    <div class="container">
+</div>
 
-      <div class="cta-box reveal">
 
-        <span class="emoji">
-          🧠
-        </span>
 
-        <h2>
-          Maybe your child's love of play isn't the problem.
-        </h2>
+<div class="benefit reveal">
 
-        <p>
-          Maybe it's the clue that can help you create a more engaging
-          way to learn.
-        </p>
+<div class="benefit-icon">💡</div>
 
-        <a
-          href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-          class="cta cta-large buy-button"
-          target="_blank"
-          rel="noopener"
-        >
-          🎮 Yes — Show Me the Approach
-        </a>
+<div>
 
-      </div>
+<h3>
 
-    </div>
+Encourage curiosity
 
-  </section>
+</h3>
 
+<p>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
+Give children opportunities to explore, ask questions
+and discover things for themselves.
 
-  <footer>
+</p>
 
-    <div class="container">
+</div>
 
-      <div class="logo">
-        🎮 Play → Learn
-      </div>
+</div>
 
-      <p>
-        © 2026 My Child Just Wants to Play All the Time
-      </p>
 
-    </div>
 
-  </footer>
+<div class="benefit reveal">
 
+<div class="benefit-icon">❤️</div>
 
-  <!-- =========================================================
-       MOBILE STICKY CTA
-       ========================================================= -->
+<div>
 
-  <div class="mobile-cta">
+<h3>
 
-    <a
-      href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
-      class="buy-button"
-      target="_blank"
-      rel="noopener"
-    >
-      🎮 Get the eBook →
-    </a>
+Protect the connection
 
-  </div>
+</h3>
 
+<p>
 
-  <!-- =========================================================
-       JAVASCRIPT
-       ========================================================= -->
+Learning doesn't have to become a daily power struggle
+between parent and child.
 
-  <script>
+</p>
 
-    /* =========================================================
-       META PIXEL - INITIATE CHECKOUT
-       ========================================================= */
+</div>
 
-    document.querySelectorAll(".buy-button").forEach(function(button) {
+</div>
 
-      button.addEventListener("click", function() {
 
-        if (typeof fbq === "function") {
 
-          fbq("track", "InitiateCheckout", {
-            content_name: "My Child Just Wants to Play All the Time",
-            content_type: "product"
-          });
+<div class="benefit reveal">
 
-        }
+<div class="benefit-icon">🚀</div>
 
-      });
+<div>
 
-    });
+<h3>
 
+Start with small changes
 
-    /* =========================================================
-       SCROLL REVEAL ANIMATION
-       ========================================================= */
+</h3>
 
-    const revealElements =
-      document.querySelectorAll(".reveal");
+<p>
 
-    const revealObserver =
-      new IntersectionObserver(
+You don't need to transform everything overnight.
+Small changes can be a starting point.
 
-        function(entries, observer) {
+</p>
 
-          entries.forEach(function(entry) {
+</div>
 
-            if (entry.isIntersecting) {
+</div>
 
-              entry.target.classList.add("visible");
 
-              observer.unobserve(entry.target);
+</div>
 
-            }
+</div>
 
-          });
+</section>
 
-        },
 
-        {
-          threshold: 0.12
-        }
 
-      );
+<!-- =========================================================
+     REAL EBOOK COVER
+========================================================= -->
 
+<section class="section book-section">
 
-    revealElements.forEach(function(element) {
+<div class="container">
 
-      revealObserver.observe(element);
 
-    });
+<div class="section-header reveal">
 
+<div class="section-kicker">
 
-    /* =========================================================
-       BUTTON CLICK EFFECT
-       ========================================================= */
+THE EBOOK
 
-    document.querySelectorAll(".cta").forEach(function(button) {
+</div>
 
-      button.addEventListener("click", function() {
+<h2>
 
-        button.style.transform = "scale(.97)";
+See exactly what you're getting
 
-        setTimeout(function() {
+</h2>
 
-          button.style.transform = "";
+<p>
 
-        }, 160);
+A calm, parent-focused guide built around one simple
+question: what if play could become part of learning?
 
-      });
+</p>
 
-    });
+</div>
 
-  </script>
+
+
+<div class="book-grid">
+
+
+<div class="cover-wrap reveal">
+
+<img
+src="my-child-wants-to-play-ebook-cover.png.png"
+alt="My Child Just Wants to Play All the Time ebook cover"
+class="cover"
+loading="lazy"
+>
+
+<div class="cover-tag">
+
+📖 Your copy
+
+</div>
+
+</div>
+
+
+
+<div class="book-points">
+
+
+<div class="book-point reveal">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>
+
+Understand the attraction to play
+
+</h3>
+
+<p>
+
+Explore why play can be so much more compelling
+than traditional study.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="book-point reveal">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>
+
+Reimagine study time
+
+</h3>
+
+<p>
+
+Explore ways to introduce game-like elements into
+everyday learning.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="book-point reveal">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>
+
+Reduce unnecessary pressure
+
+</h3>
+
+<p>
+
+Look for calmer ways to approach learning without
+making every moment a confrontation.
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="book-point reveal">
+
+<div class="check">✓</div>
+
+<div>
+
+<h3>
+
+Build a more positive learning experience
+
+</h3>
+
+<p>
+
+Focus on curiosity, participation and the small
+steps that can make learning feel more inviting.
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     BEFORE / AFTER
+========================================================= -->
+
+<section class="section transformation">
+
+<div class="container">
+
+
+<div class="section-header reveal">
+
+<div class="section-kicker">
+
+THE SHIFT
+
+</div>
+
+<h2>
+
+From "Stop playing" to "Let's learn through play"
+
+</h2>
+
+<p>
+
+The goal isn't to turn every lesson into a game.
+It's to change the way you approach the moments when
+your child naturally wants to play.
+
+</p>
+
+</div>
+
+
+
+<div class="transform-grid">
+
+
+<div class="transform-card before reveal">
+
+<h3>
+
+The old struggle
+
+</h3>
+
+<ul>
+
+<li>
+
+Repeatedly asking your child to study.
+
+</li>
+
+<li>
+
+Play feels like the reward that must wait.
+
+</li>
+
+<li>
+
+Learning can become associated with pressure.
+
+</li>
+
+<li>
+
+Parent and child become frustrated.
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="transform-card after reveal">
+
+<h3>
+
+A different possibility
+
+</h3>
+
+<ul>
+
+<li>
+
+Break learning into small challenges.
+
+</li>
+
+<li>
+
+Bring movement and play into practice.
+
+</li>
+
+<li>
+
+Use curiosity to encourage participation.
+
+</li>
+
+<li>
+
+Celebrate progress instead of only completion.
+
+</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PRODUCT MOCKUP CTA
+========================================================= -->
+
+<section class="mockup-section">
+
+<div class="container mockup-grid">
+
+
+<div class="reveal">
+
+<img
+src="my-child-wants-to-play-book-mockup.jpg"
+alt="My Child Just Wants to Play All the Time physical book style ebook advertisement"
+class="mockup"
+loading="lazy"
+>
+
+</div>
+
+
+
+<div class="mockup-copy reveal">
+
+<div class="section-kicker">
+
+A SMALL IDEA WITH A BIG POSSIBILITY
+
+</div>
+
+<h2>
+
+What if learning could feel a little more like
+
+<span>play?</span>
+
+</h2>
+
+<p>
+
+You don't have to choose between your child's happiness
+and their learning.
+
+Start by looking at play differently.
+
+</p>
+
+
+
+<div class="small-list">
+
+<div>
+
+<span>✓</span>
+Simple ideas for everyday learning
+
+</div>
+
+<div>
+
+<span>✓</span>
+Play-based approach
+
+</div>
+
+<div>
+
+<span>✓</span>
+Parent-friendly perspective
+
+</div>
+
+<div>
+
+<span>✓</span>
+Read at your own pace
+
+</div>
+
+</div>
+
+
+
+<a
+href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
+class="primary-cta buy-button"
+target="_blank"
+rel="noopener"
+>
+
+📖 Get My Copy Now →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL EMOTIONAL CTA
+========================================================= -->
+
+<section class="final-cta">
+
+<div class="container">
+
+
+<div class="final-box reveal">
+
+
+<div class="final-emoji">
+
+❤️
+
+</div>
+
+
+<h2>
+
+Your child may not be saying
+"I don't want to learn."
+
+</h2>
+
+
+<p>
+
+They may simply be saying,
+"I want to play."
+
+What if that could become the beginning of a different
+kind of learning experience?
+
+</p>
+
+
+<a
+href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
+class="primary-cta buy-button"
+target="_blank"
+rel="noopener"
+>
+
+🎮 Turn Play Into Learning — Get the eBook →
+
+</a>
+
+
+<p style="
+font-size:12px;
+margin-top:14px;
+margin-bottom:0;
+">
+
+You'll be taken to Gumroad to complete your purchase.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section faq">
+
+<div class="container">
+
+
+<div class="section-header reveal">
+
+<div class="section-kicker">
+
+QUESTIONS
+
+</div>
+
+<h2>
+
+Before you get started
+
+</h2>
+
+</div>
+
+
+
+<div class="faq-list">
+
+
+<details class="reveal">
+
+<summary>
+
+Is this about stopping children from playing?
+
+</summary>
+
+<p>
+
+No. The central idea is to explore how a child's natural
+interest in play can become part of a more engaging
+learning experience.
+
+</p>
+
+</details>
+
+
+
+<details class="reveal">
+
+<summary>
+
+Do I need expensive toys or equipment?
+
+</summary>
+
+<p>
+
+The approach focuses on simple ideas rather than requiring
+expensive equipment or complicated technology.
+
+</p>
+
+</details>
+
+
+
+<details class="reveal">
+
+<summary>
+
+Is this a replacement for school or professional advice?
+
+</summary>
+
+<p>
+
+No. This is a practical parenting ebook focused on
+approaches to everyday learning. It is not intended to
+replace professional educational or medical advice.
+
+</p>
+
+</details>
+
+
+
+<details class="reveal">
+
+<summary>
+
+How do I get the ebook?
+
+</summary>
+
+<p>
+
+Click any "Get the eBook" button on this page. You'll be
+taken to Gumroad where you can complete the purchase.
+
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="logo">
+
+Play <span>→</span> Learn
+
+</div>
+
+<p>
+
+My Child Just Wants to Play All the Time
+
+</p>
+
+<p>
+
+© 2026
+
+</p>
+
+</div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     MOBILE CTA
+========================================================= -->
+
+<div class="mobile-cta">
+
+<a
+href="https://evaani.gumroad.com/l/my-child-wants-to-play-all-the-time"
+class="buy-button"
+target="_blank"
+rel="noopener"
+>
+
+📖 Get the eBook →
+
+</a>
+
+</div>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   META PIXEL - INITIATE CHECKOUT
+========================================================= */
+
+document.querySelectorAll(".buy-button")
+.forEach(function(button){
+
+button.addEventListener("click",function(){
+
+if(typeof fbq === "function"){
+
+fbq(
+"track",
+"InitiateCheckout",
+{
+
+content_name:
+"My Child Just Wants to Play All the Time",
+
+content_type:
+"product"
+
+}
+);
+
+}
+
+});
+
+});
+
+
+
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+const revealElements =
+document.querySelectorAll(".reveal");
+
+
+const observer =
+new IntersectionObserver(
+
+function(entries,observer){
+
+entries.forEach(function(entry){
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+
+revealElements.forEach(function(element){
+
+observer.observe(element);
+
+});
+
+
+
+/* =========================================================
+   BUTTON PRESS EFFECT
+========================================================= */
+
+document.querySelectorAll(".primary-cta")
+.forEach(function(button){
+
+button.addEventListener("click",function(){
+
+button.style.transform="scale(.97)";
+
+setTimeout(function(){
+
+button.style.transform="";
+
+},150);
+
+});
+
+});
+
+
+</script>
+
 
 </body>
+
 </html>
